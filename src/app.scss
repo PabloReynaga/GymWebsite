@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+html,body,h1{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $bg-dark;
+  background:gray;
+  box-sizing: border-box;
+}
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 20px 120px;
+  background-color: $bg-dark;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+}
+nav a{
+  color: $secondary;
+  height: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+nav a:hover{
+  color: $primary;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-dark-gray;
+  font-size: 100px;
+  font-weight: 700;
+  color: $secondary;
+}
+section:nth-child(odd){
+  background-color: $bg-gray ;
+}
