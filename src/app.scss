@@ -5,7 +5,6 @@ html,body,h1{
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   color: $bg-dark;
-  background:gray;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -29,6 +28,7 @@ nav a{
   font-weight: 500;
   margin-left: 35px;
   transition: .3s;
+  
 }
 nav a:hover{
   color: $primary;
