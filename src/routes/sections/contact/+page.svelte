@@ -4,11 +4,12 @@
 </script>
 <div class="container">
    <div class="formular">
-            <div class="header-titulos">
-                <h1 class="title">Trabajemos juntos en tus metas!</h1>
-                <p class="p">Si te quedaron dudas contactame para ver tu situacion y perzonalizar un plan especifico para ti.</p>
-            </div>
+            
             <div class="container-input">
+                <div class="header-titulos">
+                    <h1 class="title">Trabajemos juntos en tus metas!</h1>
+                    <p class="p">Si te quedaron dudas contactame para ver tu situacion y perzonalizar un plan especifico para ti.</p>
+                </div>
                 
                 <form action="https://formsubmit.co/reynagafarias@gmail.com" method="post">
                     
@@ -139,7 +140,7 @@
 .header-titulos{
     display: block;
     justify-content: center;
-    width: 80vw;
+   
 }
 
 

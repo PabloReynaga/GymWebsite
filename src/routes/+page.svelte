@@ -1,8 +1,9 @@
 <script>
-  
+import Home from './..//routes/sections/home/+page.svelte'    
 import Contact from '..//routes/sections/contact/+page.svelte'
-let y;
+import icon from '$lib/icon/main-icon.png'
 
+let y;
 $:innerHeight= 0;
 $:firstScreen = innerHeight-90;
 $:secondScrenn= firstScreen + firstScreen;
@@ -53,9 +54,9 @@ setInterval(()=>{
 
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight}/>
 <header>
-
-    <a href="#home"  class="logo">LOGO</a>
-    
+    <a href="#home">
+        <img class="icon" alt="img" src={icon}/> 
+    </a>
 
     <nav class="items-nav">
         <a href="#home" class:active={colored.homeButton} on:click={()=>{colored.homeButton=true, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= false}}>Home</a>
@@ -68,11 +69,17 @@ setInterval(()=>{
 <body>
     
     <section id="home">
-        <img alt="img"  src="../main-icon.png">
-      home
+        <Home/>
     </section>
-    <section id="about">about</section>
-    <section id="vlog">vlog</section>
+
+    <section id="about">about
+
+    </section>
+    
+    <section id="vlog">vlog
+
+    </section>
+    
     <section id="contact" >
         <Contact/>
     </section>
@@ -93,15 +100,11 @@ setInterval(()=>{
     
 }
     
-.logo{
-    font-size: 25px;
-    text-decoration: none;
-    color: $secondary ;
-  
-}
 .active{
     color: $primary;
 }
-
-
+.icon{
+    height: 30px;
+    transform: scale(2);
+}
 </style>
