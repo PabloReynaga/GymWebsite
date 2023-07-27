@@ -2,6 +2,7 @@
 import Home from './..//routes/sections/home/+page.svelte'    
 import Contact from '..//routes/sections/contact/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
+import menuIcon from '$lib/icon/menu-desplegable.png'
 
 let y;
 $:innerHeight= 0;
@@ -57,8 +58,10 @@ setInterval(()=>{
     <a href="#home">
         <img class="icon" alt="img" src={icon}/> 
     </a>
-
+    
     <nav class="items-nav">
+        
+        <img class="menu-icon" alt="icon" src={menuIcon}>
         <a href="#home" class:active={colored.homeButton} on:click={()=>{colored.homeButton=true, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= false}}>Home</a>
         <a href="#about" class:active={colored.aboutButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = true, colored.vlogButton = false, colored.contactMeButton= false}}>About</a>
         <a href="#vlog" class:active={colored.vlogButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = false, colored.vlogButton = true, colored.contactMeButton= false}}>Vlog</a>
@@ -67,6 +70,15 @@ setInterval(()=>{
 
 </header>
 <body>
+    <div class="responsive-menu">
+        <ul>
+            <li><i></i><a href="#home">home</a></li>
+            <li><i></i><a href="#about">about</a></li>
+            <li><i></i><a href="#vlog">vlog</a></li>
+            <li><i></i><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    
     
     <section id="home">
         <Home/>
@@ -91,6 +103,7 @@ setInterval(()=>{
     
 </footer>
 <style lang="scss">
+   
 
 .footer{
     font-size: 10px;
@@ -107,4 +120,30 @@ setInterval(()=>{
     height: 30px;
     transform: scale(2);
 }
+.menu-icon{
+    display: none;
+}
+.responsive-menu{
+    background-color: $bg-bright;
+    position: sticky;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    height: 8px;
+    width: 150px;
+
+}
+@media only screen and (max-width:650px){
+nav a{
+    display: none;
+}
+.menu-icon{
+    height: 30px;
+    width: 30px;
+    display: flex;
+}
+
+}
+
+
 </style>
