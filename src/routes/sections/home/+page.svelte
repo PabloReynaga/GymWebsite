@@ -3,11 +3,11 @@
     import Button from './../../../componets/button.svelte'
 </script>
 <body>
-    
     <h1 class="titulo">Masteriza tu version superior</h1>
-   
     <div class="img-container">
+        
         <img class="img" alt="img" src={Img}>
+        
     </div>    
     <div class="button-container" >
         <Button buttonValue="Let´s start"></Button>
@@ -33,10 +33,10 @@
     width: auto;
     height: auto;
     box-sizing: border-box;
-    padding: 20px;
+    top:70px;
 }
 .img-container{
-    border: red 5px;
+  
     display: flex;
     height: 600px;
 }

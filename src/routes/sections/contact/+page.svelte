@@ -122,6 +122,7 @@
     height: 15vh;
     padding: 8px;
     box-sizing: content-box;
+    color: $bg-dark;
       
 }
 .text-area-field:hover{
@@ -140,6 +141,7 @@
 .header-titulos{
     display: block;
     justify-content: center;
+    margin-top: 60px;
    
 }
 
