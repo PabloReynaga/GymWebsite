@@ -79,7 +79,7 @@ setInterval(()=>{
         </ul>
     </div>
     
-    
+
     <section id="home">
         <Home/>
     </section>
@@ -103,7 +103,9 @@ setInterval(()=>{
     
 </footer>
 <style lang="scss">
-   
+*{
+    display: block;
+}
 
 .footer{
     font-size: 10px;
