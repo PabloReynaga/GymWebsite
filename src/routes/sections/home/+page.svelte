@@ -10,7 +10,11 @@
         
     </div>    
     <div class="button-container" >
-        <Button buttonValue="Let´s start"></Button>
+        
+            <a href="http://web.whatsapp.com/send?">
+                <Button buttonValue="Let´s start"></Button>
+            </a>
+        
 
     </div>
     
