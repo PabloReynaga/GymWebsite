@@ -79,6 +79,7 @@
     box-sizing: border-box;
     padding: 8px;
     margin: auto;
+    color: $bg-dark
     
 
 }
