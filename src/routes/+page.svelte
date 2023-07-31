@@ -6,7 +6,6 @@ import menuIcon from '$lib/icon/menu-desplegable.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 let y;
 $:windowsWidth=0;
-
 $:innerHeight= 0;
 $:firstScreen = innerHeight-90;
 $:secondScrenn= firstScreen + firstScreen;
