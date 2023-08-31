@@ -42,7 +42,7 @@
         display: flex;
         justify-content: center;
         font-size: 32px;
-        padding: 10px;
+        margin-top: 60px;
         box-sizing: border-box;
        
        
@@ -78,6 +78,7 @@
         display: flex;
         justify-content: center;
         margin-right: 15px;
+        margin-bottom: 20px;
     }
     .redessociales{
         display: flex;

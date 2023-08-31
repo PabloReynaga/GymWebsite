@@ -85,11 +85,9 @@
 }
 .input-field:focus{
     outline: none;
-    box-shadow:0px 0px 2px 2px $primary;
+    box-shadow:0px 0px 1px 1px $primary;
 }
-.input-field:hover{
-    box-shadow:0px 0px 2px 2px $primary;
-}
+
 .label-input{
     justify-content: center;
     display: flex;
@@ -126,14 +124,10 @@
     color: $bg-dark;
       
 }
-.text-area-field:hover{
-    
-    box-shadow:0px 0px 2px 2px $primary;
-    
-}
+
 .text-area-field:focus{
     outline: none;
-    box-shadow:0px 0px 2px 2px $primary;
+    box-shadow:0px 0px 1px 1px $primary;
 }
 .button-container{
     margin-bottom: 15px;

@@ -1,6 +1,7 @@
 <script>
     import Img from '$lib/img/backGround.png'
     import Button from './../../../componets/button.svelte'
+    import IconWP from '$lib/icon/whatsapp.png'
 </script>
 <body>
     <h1 class="titulo">Masteriza tu version superior</h1>
@@ -12,11 +13,11 @@
     <div class="button-container" >
         
             <a href="http://web.whatsapp.com/send?">
-                <Button buttonValue="Let´s start"></Button>
+                <Button buttonValue="Let´s start" img={IconWP}></Button>
             </a>
-        
 
     </div>
+     
     
 </body>
 <style lang="scss">
@@ -57,6 +58,13 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    
+}
+.test{
+    background-color: white;
+}
+.iconWp{
+    height: 200px;
 }
 
 </style>

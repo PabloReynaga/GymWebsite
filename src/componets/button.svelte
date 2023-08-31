@@ -1,13 +1,21 @@
 <script>
 
 export let buttonValue;
+export let img;
 
 
     
 </script>
 
 <main>
-    <button class="main-button">{buttonValue}
+    <button class="main-button">
+        <div class="button-container">
+            <p class="button-text">{buttonValue}</p>
+            <img class="iconWP" src={img}>
+
+        </div>
+        
+        
     </button>
 </main>
 
@@ -64,4 +72,20 @@ export let buttonValue;
     top: 0;
    
 }
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
+.button-text{
+    margin-left: 25px;
+}
+.iconWP{
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
 </style>
