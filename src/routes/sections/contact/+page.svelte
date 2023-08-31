@@ -1,5 +1,6 @@
 <script>
     import Button from './../../../componets/button.svelte'
+    import Avatar from '$lib/icon/avatar.png'
 
 </script>
 <div class="container">
@@ -14,16 +15,16 @@
                 <form action="https://formsubmit.co/reynagafarias@gmail.com" method="post">
                     
                 <label class="label-input"  for="name">Nombre*</label>
-                <input class="input-field" type="text" id="name" required name="Nombre">
+                <input class="input-field-name" type="text" id="name" required name="Nombre">
             
                 <label class="label-input" for="mail">Mail*</label>
-                <input class="input-field" type="mail" id="mail" required name="Mail">
+                <input class="input-field-mail" type="mail" id="mail" required name="Mail">
             
                 <label class="label-input" for="number">Tu Whatsapp*</label>
-                <input class="input-field" type="text" id="number" required name="Whatsapp">
+                <input class="input-field-phone" type="text" id="number" required name="Whatsapp">
 
                 <label class="label-input" for="instagram">Tu instagram</label>
-                <input class="input-field" type="text" id="instagram" name="Instagram" >
+                <input class="input-field-instagram" type="text" id="instagram" name="Instagram" >
     
                 <label class="label-input" for="massage">Cual es tu meta?</label>
                 <textarea class="text-area-field" type="text" id="massage" name="Mensaje"
@@ -57,7 +58,6 @@
     min-height: 80vh;
     display:block;
     justify-content: center;
-    
     min-width: 80vw;
 
 }
@@ -67,27 +67,87 @@
     align-items: center;
     box-sizing: border-box;
     align-items: center;
-
-    
-  
 }
 
-.input-field{
+.input-field-name{
     justify-content: center;
     display:flex;
     text-align: left;
     box-sizing: border-box;
     padding: 8px;
     margin: auto;
-    color: $bg-dark
-    
-
+    color: $bg-dark;
+    background-image: url(../../../lib/icon/avatar.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px;
+    background-position: left;
+    background-position-x: 3px;
 }
-.input-field:focus{
+.input-field-name:focus{
     outline: none;
     box-shadow:0px 0px 1px 1px $primary;
 }
-
+.input-field-mail{
+    justify-content: center;
+    display:flex;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: auto;
+    color: $bg-dark;
+    background-image: url(../../../lib/icon/sobre.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px;
+    background-position: left;
+    background-position-x: 5px;
+    
+}
+.input-field-mail:focus{
+    outline: none;
+    box-shadow:0px 0px 1px 1px $primary;
+}
+.input-field-phone{
+    justify-content: center;
+    display:flex;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: auto;
+    color: $bg-dark;
+    background-image: url(../../../lib/icon/llamada-telefonica.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px;
+    background-position: left;
+    background-position-x: 5px;
+    
+}
+.input-field-phone:focus{
+    outline: none;
+    box-shadow:0px 0px 1px 1px $primary;
+}
+.input-field-instagram{
+    justify-content: center;
+    display:flex;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: auto;
+    color: $bg-dark;
+    background-image: url(../../../lib/icon/compartir.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 30px;
+    background-position: left;
+    background-position-x: 5px;
+    
+}
+.input-field-instagram:focus{
+    outline: none;
+    box-shadow:0px 0px 1px 1px $primary;
+}
 .label-input{
     justify-content: center;
     display: flex;
