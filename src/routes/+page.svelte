@@ -1,6 +1,7 @@
 <script>
 import Home from './..//routes/sections/home/+page.svelte'    
 import Contact from '..//routes/sections/contact/+page.svelte'
+import About from '../routes/sections/about/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
 import menuIcon from '$lib/icon/menu-desplegable.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
@@ -77,13 +78,12 @@ setInterval(()=>{
 <body>
     
     
-    
     <section id="home">
         <Home/>
     </section>
 
-    <section id="about">about
-
+    <section id="about">
+        <About/>
     </section>
     
     <section id="vlog">vlog

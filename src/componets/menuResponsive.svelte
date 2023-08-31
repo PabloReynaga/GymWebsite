@@ -51,7 +51,7 @@
 							</svg>
 			{/if}
 		</button>
-		<ul class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-21 mr-10 " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
+		<ul class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-25 mr-10 " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
 			<li><button class="btn text-slate-300 w-45"><a href="#home">Home</a></button></li>
 			<li><button class="btn text-slate-300 w-45 "><a href="#about">About</a></button></li>
             <li><button class="btn text-slate-300 w-45"><a href="#vlog">Vlog</a></button></li>
