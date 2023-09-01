@@ -1,23 +1,56 @@
 <script>
     import GymImgPerson from '$lib/img/gym-person.png'
     import GymImg from '$lib/img/gym.png'
+    import ChainLeft from '$lib/img/chain-left.png'
+    import ChainRight from '$lib/img/chain-right.png'
+
+$:windowsWidth = 0;
+
+$:console.log(windowsWidth)
+   
+
 
 </script>
+<svelte:window bind:innerWidth={windowsWidth}/>
 <div>
     <h1 class="title">Mi Mision</h1>
     <div class="mision-container">
         <div class="first-container">
-            <p class="first-text">Me converti en fitness-coach y cambie mi realidad.
-                Ahora yo te guiaré para que tu puedas cambies la tuya.
-            </p>
+            <div class="text-chain-container">
+                <p class="first-text">Me converti en fitness-coach y cambie mi realidad.
+                    Ahora yo te guiaré para que tu puedas cambies la tuya.
+                </p>
+                <div class="container-first-img">
+                    {#if windowsWidth>389}
+                    <img class="chain-left" alt="img" src={ChainLeft}>
+                {/if}
+
+                </div>
+                
+               
+            </div>
+           
             <img class="first-img" alt="img" src={GymImgPerson}>
         </div>
         <div class="second-container">
             <img class="second-img" alt="img" src={GymImg}>
+          <div>
             <p class="second-text">Yo hare que tu esfuerzo y dedicacion de sus
                 sus frutos y asi podras convertirte en el 
                 gladeador que llevas dentro.
             </p>
+            <div class="container-second-img">
+                {#if windowsWidth>389}
+                <img class="chain-right" alt="img" src={ChainRight}>
+                {/if}
+                
+
+            </div>
+           
+          </div>
+         
+
+         
 
         </div>
     </div>
@@ -25,7 +58,7 @@
 
 <style lang="scss">
     *{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -56,6 +89,10 @@
     .first-text{
         justify-content: center;
         display: flex;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        
         
         
     }
@@ -67,6 +104,10 @@
     .second-text{
         padding: 5px;
         margin-left: 10px;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
     }
     .first-img{
         width: 50%;
@@ -83,5 +124,30 @@
     object-position: right;
 
     }
-    
+    .chain-left{
+        width: 70%;
+        height: 70%;
+        display: block;
+    margin-top: 10px;
+        }
+    .chain-right{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        float: right;
+      
+
+    }   
+    .container-first-img{
+        height: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .container-second-img{
+        height: 30%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        
+    }
 </style>

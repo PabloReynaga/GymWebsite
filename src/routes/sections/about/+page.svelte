@@ -11,7 +11,7 @@
            para lograr un cambio real y duradero en mi fisico.
         </p>
     </div>
-    <div>
+    <div class="img-container">
         <img class="img" alt="img" src={Img}>
     </div>
     <p class="redessociales">Sigueme en mi redes sociales 
@@ -65,7 +65,18 @@
     }
     .img{
         padding: 20px;
+        max-height: 75%;
+        max-width: 75%;
+        object-position: center;
+        display: flex;
+        justify-content: center;
         
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+      
+      
     }
     .container-icons{
         display: flex;
