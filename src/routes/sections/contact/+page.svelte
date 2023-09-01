@@ -1,6 +1,6 @@
 <script>
     import Button from './../../../componets/button.svelte'
-    import Avatar from '$lib/icon/avatar.png'
+    import Pesa_icono from '$lib/icon/main-icon.png'
 
 </script>
 <div class="container">
@@ -15,22 +15,22 @@
                 <form action="https://formsubmit.co/reynagafarias@gmail.com" method="post">
                     
                 <label class="label-input"  for="name">Nombre*</label>
-                <input class="input-field-name" type="text" id="name" required name="Nombre">
+                <input class="input-field-name" type="text" id="name" required name="Nombre" autocomplete="off">
             
                 <label class="label-input" for="mail">Mail*</label>
-                <input class="input-field-mail" type="mail" id="mail" required name="Mail">
+                <input class="input-field-mail" type="mail" id="mail" required name="Mail" autocomplete="off">
             
                 <label class="label-input" for="number">Tu Whatsapp*</label>
-                <input class="input-field-phone" type="text" id="number" required name="Whatsapp">
+                <input class="input-field-phone" type="text" id="number" required name="Whatsapp" autocomplete="off">
 
                 <label class="label-input" for="instagram">Tu instagram</label>
-                <input class="input-field-instagram" type="text" id="instagram" name="Instagram" >
+                <input class="input-field-instagram" type="text" id="instagram" name="Instagram" autocomplete="off">
     
                 <label class="label-input" for="massage">Cual es tu meta?</label>
                 <textarea class="text-area-field" type="text" id="massage" name="Mensaje"
                 >Hola! mi nombre es... y quiero empezar! </textarea>
                 <div class="button-container">
-                    <Button buttonValue="Enviar"></Button>
+                    <Button buttonValue="Enviar" img={Pesa_icono}></Button>
                 </div> 
                 </form>
                 
@@ -177,7 +177,7 @@
     align-items: center;
     margin: auto;
     resize: none;
-    width: 40vw;
+    width: 297px;
     height: 15vh;
     padding: 8px;
     box-sizing: content-box;

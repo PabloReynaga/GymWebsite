@@ -18,9 +18,12 @@
         para poder ver más:
     </p>
     <div class="container-icons">
-        <button class="icon-instagram">
-            <img  alt="img" src={IconInstagram}>
-        </button>
+        <a href="https://instagram.com/cacholofitness?igshid=MzRlODBiNWFlZA==">
+            <button class="icon-instagram">
+                <img  alt="img" src={IconInstagram}>
+            </button>
+        </a>
+       
         <button class="icon-youtube">
             <img  alt="img" src={IconYouTube}>
         </button>
@@ -62,6 +65,7 @@
     }
     .img{
         padding: 20px;
+        
     }
     .container-icons{
         display: flex;

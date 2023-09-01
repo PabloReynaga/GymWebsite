@@ -2,9 +2,11 @@
 import Home from './..//routes/sections/home/+page.svelte'    
 import Contact from '..//routes/sections/contact/+page.svelte'
 import About from '../routes/sections/about/+page.svelte'
+import Vlog from '../routes/sections/vlog/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
 import menuIcon from '$lib/icon/menu-desplegable.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
+
 let y;
 $:windowsWidth=0;
 $:innerHeight= 0;
@@ -86,8 +88,8 @@ setInterval(()=>{
         <About/>
     </section>
     
-    <section id="vlog">vlog
-
+    <section id="vlog">
+        <Vlog/>
     </section>
     
     <section id="contact" >
