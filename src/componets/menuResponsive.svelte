@@ -3,10 +3,16 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </svelte:head>
 
+
 // add text here if REPL preview is empty 
 
+
 <script>
-    import iconHome from '$lib/icon/avatar.png'
+   $: windowsWidth-=50;
+   $:console.log(windowsWidth+"!");
+   $: margin_left = windowsWidth -90;
+
+
   let isDropdownOpen = false // default state (dropdown close)
 
   const handleDropdownClick = () => {
@@ -19,6 +25,7 @@
     isDropdownOpen = false
   }
 </script>
+<svelte:window bind:innerWidth={windowsWidth}/>
 
 <div class="prueba">
 	<div class="dropdown" on:focusout={handleDropdownFocusLoss}>
@@ -51,11 +58,11 @@
 							</svg>
 			{/if}
 		</button>
-		<ul class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-25 mr-10 " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
-			<li><button class="btn text-slate-300 w-45"><a href="#home">Inicio</a></button></li>
-			<li><button class="btn text-slate-300 w-45 "><a href="#about">Historia</a></button></li>
-            <li><button class="btn text-slate-300 w-45"><a href="#vlog">Mi Misión</a></button></li>
-            <li><button class="btn text-slate-300 w-45"><a href="#contact">Contacto</a></button></li>
+		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
+			<li><button class="item btn text-slate-400 m-2 w-45"><a href="#home">Inicio</a></button></li>
+			<li><button class="item btn text-slate-300  m-2 w-45 "><a href="#about">Trasformación</a></button></li>
+            <li><button class="item btn text-slate-300 m-2 w-45"><a href="#vlog">Mi Misión</a></button></li>
+            <li><button class="item btn text-slate-300 m-2 w-45"><a href="#contact">Contactame</a></button></li>
         
 		</ul>
 	</div>
@@ -74,8 +81,18 @@
     margin-right: 8px;
 }
 .dropdown-content{
-
-
+	
+	
+	padding: 15px;
+	
+	height: 400px;
+	justify-content: center;
+	display: flex;
+}
+.item{
+	height: 70px;
+	font-size: 17px;
+	
 }
 
 
