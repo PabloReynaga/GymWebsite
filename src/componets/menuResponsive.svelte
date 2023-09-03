@@ -52,10 +52,10 @@
 			{/if}
 		</button>
 		<ul class="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-25 mr-10 " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
-			<li><button class="btn text-slate-300 w-45"><a href="#home">Home</a></button></li>
-			<li><button class="btn text-slate-300 w-45 "><a href="#about">About</a></button></li>
-            <li><button class="btn text-slate-300 w-45"><a href="#vlog">Vlog</a></button></li>
-            <li><button class="btn text-slate-300 w-45"><a href="#contact">Contact</a></button></li>
+			<li><button class="btn text-slate-300 w-45"><a href="#home">Inicio</a></button></li>
+			<li><button class="btn text-slate-300 w-45 "><a href="#about">Historia</a></button></li>
+            <li><button class="btn text-slate-300 w-45"><a href="#vlog">Mi Misión</a></button></li>
+            <li><button class="btn text-slate-300 w-45"><a href="#contact">Contacto</a></button></li>
         
 		</ul>
 	</div>
@@ -73,11 +73,12 @@
     width: auto;
     margin-right: 8px;
 }
-@media only screen and (min-width:651px){
-.prueba{
-    display: none;
-}
+.dropdown-content{
+
 
 }
+
+
+
     
 </style>

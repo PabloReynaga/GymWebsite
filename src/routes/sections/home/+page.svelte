@@ -4,7 +4,7 @@
     import IconWP from '$lib/icon/whatsapp.png'
 </script>
 <body>
-    <h1 class="titulo">Masteriza tu version superior</h1>
+    <h1 class="titulo">Masteriza tu versión superior</h1>
     <div class="img-container">
         
         <img class="img" alt="img" src={Img}>
@@ -12,8 +12,8 @@
     </div>    
     <div class="button-container" >
         
-            <a href="http://web.whatsapp.com/send?">
-                <Button buttonValue="Let´s start" img={IconWP}></Button>
+            <a href="https://form.jotform.com/230244462128045">
+                <Button buttonValue="Comienza ahora!" ></Button>
             </a>
 
     </div>

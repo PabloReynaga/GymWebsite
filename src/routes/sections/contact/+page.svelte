@@ -8,8 +8,8 @@
             
             <div class="container-input">
                 <div class="header-titulos">
-                    <h1 class="title">Trabajemos juntos en tus metas!</h1>
-                    <p class="p">Si te quedaron dudas contactame para ver tu situacion y perzonalizar un plan especifico para ti.</p>
+                    <h1 class="title">Conviertete en tu mejor versión!</h1>
+                    <p class="p">Si te quedaron dudas contactame para ver tu situación y personalizar un plan específico para ti.</p>
                 </div>
                 
                 <form action="https://formsubmit.co/reynagafarias@gmail.com" method="post">
@@ -20,13 +20,13 @@
                 <label class="label-input" for="mail">Mail*</label>
                 <input class="input-field-mail" type="mail" id="mail" required name="Mail" autocomplete="off">
             
-                <label class="label-input" for="number">Tu Whatsapp*</label>
+                <label class="label-input" for="number">Whatsapp*</label>
                 <input class="input-field-phone" type="text" id="number" required name="Whatsapp" autocomplete="off">
 
-                <label class="label-input" for="instagram">Tu instagram</label>
+                <label class="label-input" for="instagram">Instagram</label>
                 <input class="input-field-instagram" type="text" id="instagram" name="Instagram" autocomplete="off">
     
-                <label class="label-input" for="massage">Cual es tu meta?</label>
+                <label class="label-input" for="massage">Cuál es tu duda?</label>
                 <textarea class="text-area-field" type="text" id="massage" name="Mensaje"
                 >Hola! mi nombre es... y quiero empezar! </textarea>
                 <div class="button-container">
@@ -160,6 +160,7 @@
     font-size: 32px;
     padding: 10px;
     box-sizing: border-box;
+    color: $secondary;
     
     
 }

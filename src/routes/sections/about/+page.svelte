@@ -6,15 +6,15 @@
 </script>
 <div class="section-container">
     <div class="header-container">
-        <h1 class= "title">Mi trasformación</h1>
-        <p class = "subtitle">Luego de enfoque y dedicacion cree un plan
-           para lograr un cambio real y duradero en mi fisico.
+        <h1 class= "title">Mi Trasformación</h1>
+        <p class = "subtitle">Con mucho enfoque y dedicación cree un plan
+           para lograr un cambio real y duradero.
         </p>
     </div>
     <div class="img-container">
         <img class="img" alt="img" src={Img}>
     </div>
-    <p class="redessociales">Sigueme en mi redes sociales 
+    <p class="redessociales">Sígueme en mis redes sociales 
         para poder ver más:
     </p>
     <div class="container-icons">
@@ -47,6 +47,7 @@
         font-size: 32px;
         margin-top: 60px;
         box-sizing: border-box;
+        color: $secondary;
        
        
     }
@@ -65,8 +66,9 @@
     }
     .img{
         padding: 20px;
-        max-height: 75%;
         max-width: 75%;
+        max-height: 75%;
+        
         object-position: center;
         display: flex;
         justify-content: center;
@@ -75,6 +77,7 @@
     .img-container{
         display: flex;
         justify-content: center;
+        
       
       
     }

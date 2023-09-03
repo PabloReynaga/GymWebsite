@@ -13,12 +13,12 @@ $:console.log(windowsWidth)
 </script>
 <svelte:window bind:innerWidth={windowsWidth}/>
 <div>
-    <h1 class="title">Mi Mision</h1>
+    <h1 class="title">Mi Misión</h1>
     <div class="mision-container">
         <div class="first-container">
             <div class="text-chain-container">
-                <p class="first-text">Me converti en fitness-coach y cambie mi realidad.
-                    Ahora yo te guiaré para que tu puedas cambies la tuya.
+                <p class="first-text">Me convertí en fitness-coach y cambié mi realidad.
+                    Ahora yo te guiaré para que tú puedas cambies la tuya.
                 </p>
                 <div class="container-first-img">
                     {#if windowsWidth>389}
@@ -35,9 +35,9 @@ $:console.log(windowsWidth)
         <div class="second-container">
             <img class="second-img" alt="img" src={GymImg}>
           <div>
-            <p class="second-text">Yo hare que tu esfuerzo y dedicacion de sus
-                sus frutos y asi podras convertirte en el 
-                gladeador que llevas dentro.
+            <p class="second-text">Juntos lograremos que tu esfuerzo y dedicación de 
+                sus frutos y así podrás convertirte en el 
+                gladiador que llevas dentro.
             </p>
             <div class="container-second-img">
                 {#if windowsWidth>389}
@@ -79,6 +79,7 @@ $:console.log(windowsWidth)
         font-size: 32px;
         padding: 10px;
         box-sizing: border-box;
+        margin-top: 60px;
 
     }
     .first-container{
