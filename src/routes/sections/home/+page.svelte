@@ -69,9 +69,7 @@
     
     
 }
-.h{
-    color: white;
-}
+
 
 
 </style>

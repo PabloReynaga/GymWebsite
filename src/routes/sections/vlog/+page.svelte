@@ -20,7 +20,7 @@ $:responsiveMarginVar= responsiveMargin
                     Ahora yo te guiaré para que tú puedas cambies la tuya.
                 </p>
                 <div class="container-first-img">
-                    {#if windowsWidth>389}
+                    {#if windowsWidth>320}
                     <img class="chain-left" alt="img" src={ChainLeft}>
                 {/if}
 
@@ -39,7 +39,7 @@ $:responsiveMarginVar= responsiveMargin
                 gladiador que llevas dentro.
             </p>
             <div class="container-second-img">
-                {#if windowsWidth>389}
+                {#if windowsWidth>320}
                 <img class="chain-right" alt="img" src={ChainRight}>
                 {/if}
                 

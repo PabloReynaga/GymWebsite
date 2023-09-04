@@ -1,14 +1,8 @@
-
-
-
-// add text here if REPL preview is empty 
-
-
 <script>
 	import './../../src/index.css'
    $: windowsWidth-=50;
    $:console.log(windowsWidth+"!");
-   $: margin_left = windowsWidth -90;
+   $: margin_left = windowsWidth -100;
 
 
   let isDropdownOpen = false // default state (dropdown close)
@@ -57,22 +51,17 @@
 			{/if}
 		</button>
 		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
-			<li><button class="item align-middle btn text-slate-400 m-2 w-45"><a href="#home">Inicio</a></button></li>
-			<li><button class="item align-middle btn text-slate-300  m-2 w-45 "><a href="#about">Trasformación</a></button></li>
-            <li><button class="item align-middle btn text-slate-300 m-2 w-45"><a href="#vlog">Mi Misión</a></button></li>
-            <li><button class="item align-middle btn text-slate-300 m-2 w-45"><a href="#contact">Contactame</a></button></li>
+			<li><button class="item btn m-2 w-45"><a  class="text-in-botton"  href="#home">Inicio</a></button></li>
+			<li><button class="item btn m-2 w-45 "><a class="text-in-botton"  href="#about">Trasformación</a></button></li>
+            <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#vlog">Mi Misión</a></button></li>
+            <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#contact">Contactame</a></button></li>
         
 		</ul>
 	</div>
 	
 </div>
-<style>
-.prueba{
-   display: flex;
-   justify-content: right;
-   
+<style lang="scss">
 
-}
 .button{
     
     width: auto;
@@ -90,7 +79,18 @@
 .item{
 	height: 70px;
 	font-size: 17px;
+	background-color: $bg-gray;
+    display:flex;
+	align-items: center;
+	vertical-align: middle;
+	a{
+		display:flex;
+		align-items: center;
+		vertical-align: middle;
+	}
 	
 }
+
+
     
 </style>
