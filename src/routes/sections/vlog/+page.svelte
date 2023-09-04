@@ -3,17 +3,16 @@
     import GymImg from '$lib/img/gym.png'
     import ChainLeft from '$lib/img/chain-left.png'
     import ChainRight from '$lib/img/chain-right.png'
-
+    
+    
 $:windowsWidth = 0;
-
-$:console.log(windowsWidth)
-   
-
+$:responsiveMargin /= 20
+$:responsiveMarginVar= responsiveMargin
 
 </script>
-<svelte:window bind:innerWidth={windowsWidth}/>
+<svelte:window bind:innerWidth={windowsWidth} bind:innerHeight={responsiveMargin}/>
 <div>
-    <h1 class="title">Mi Misión</h1>
+    <h1 style="margin-top: {responsiveMarginVar}px;" class="title">Mi Misión</h1>
     <div class="mision-container">
         <div class="first-container">
             <div class="text-chain-container">
@@ -79,7 +78,7 @@ $:console.log(windowsWidth)
         font-size: 32px;
         padding: 10px;
         box-sizing: border-box;
-        margin-top: 60px;
+        margin-top: 500px;
 
     }
     .first-container{

@@ -1,14 +1,17 @@
 <script>
     import Button from './../../../componets/button.svelte'
     import Pesa_icono from '$lib/icon/main-icon.png'
+    $:responsiveMargin /= 20;
+    $:responsiveMarginVar= responsiveMargin;
 
 </script>
+<svelte:window bind:innerHeight={responsiveMargin}/>
 <div class="container">
    <div class="formular">
             
             <div class="container-input">
                 <div class="header-titulos">
-                    <h1 class="title">Conviertete en tu mejor versión!</h1>
+                    <h1 style="margin-top: {responsiveMarginVar}px" class="title">Conviertete en tu mejor versión!</h1>
                     <p class="p">Si te quedaron dudas contactame para ver tu situación y personalizar un plan específico para ti.</p>
                 </div>
                 

@@ -2,17 +2,30 @@
     import Img from '$lib/img/foto_about.png'
     import IconInstagram from '$lib/icon/instagram.png'
     import IconYouTube from '$lib/icon/youtube.png'
+$:responsiveMargin /= 20;
+$:responsiveMarginVar= responsiveMargin;
+$:windowWidth = 0;
+$: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;
+
+
+$:console.log(windowWidth+"das")
+$: console.log(result+"ella")
+
+
+
+
 
 </script>
+<svelte:window bind:innerHeight={responsiveMargin} bind:innerWidth={windowWidth}/>
 <div class="section-container">
     <div class="header-container">
-        <h1 class= "title">Mi Trasformación</h1>
+        <h1 style="margin-top: {responsiveMarginVar+15}px;" class= "title">Mi Trasformación</h1>
         <p class = "subtitle">Con mucho enfoque y dedicación cree un plan
            para lograr un cambio real y duradero.
         </p>
     </div>
     <div class="img-container">
-        <img class="img" alt="img" src={Img}>
+        <img style="{result}" class="img" alt="img" src={Img}>
     </div>
     <p class="redessociales">Sígueme en mis redes sociales 
         para poder ver más:
@@ -66,9 +79,8 @@
     }
     .img{
         padding: 20px;
-        max-width: 75%;
-        max-height: 75%;
-        
+        max-width: 100%;
+        max-height: 100%;
         object-position: center;
         display: flex;
         justify-content: center;

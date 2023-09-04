@@ -2,9 +2,11 @@
     import Img from '$lib/img/backGround.png'
     import Button from './../../../componets/button.svelte'
     import IconWP from '$lib/icon/whatsapp.png'
+    $:responsiveMargin /= 20;
+    $:responsiveMarginVar= responsiveMargin;
 </script>
 <body>
-    <h1 class="titulo">Masteriza tu versión superior</h1>
+    <h1 style="margin-top: {responsiveMarginVar}px" class="titulo">Masteriza tu versión superior</h1>
     <div class="img-container">
         
         <img class="img" alt="img" src={Img}>
@@ -20,6 +22,7 @@
      
     
 </body>
+<svelte:window bind:innerHeight={responsiveMargin}/>
 <style lang="scss">
 *{
     font-size: 20px;
