@@ -12,10 +12,7 @@ export let img;
         <div class="button-container">
             <p class="button-text">{buttonValue}</p>
             <img class="iconWP" src={img}>
-
         </div>
-        
-        
     </button>
 </main>
 

@@ -1,13 +1,11 @@
-<svelte:head>	
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.11.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-</svelte:head>
+
 
 
 // add text here if REPL preview is empty 
 
 
 <script>
+	import './../../src/index.css'
    $: windowsWidth-=50;
    $:console.log(windowsWidth+"!");
    $: margin_left = windowsWidth -90;
@@ -59,10 +57,10 @@
 			{/if}
 		</button>
 		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
-			<li><button class="item btn text-slate-400 m-2 w-45"><a href="#home">Inicio</a></button></li>
-			<li><button class="item btn text-slate-300  m-2 w-45 "><a href="#about">Trasformación</a></button></li>
-            <li><button class="item btn text-slate-300 m-2 w-45"><a href="#vlog">Mi Misión</a></button></li>
-            <li><button class="item btn text-slate-300 m-2 w-45"><a href="#contact">Contactame</a></button></li>
+			<li><button class="item align-middle btn text-slate-400 m-2 w-45"><a href="#home">Inicio</a></button></li>
+			<li><button class="item align-middle btn text-slate-300  m-2 w-45 "><a href="#about">Trasformación</a></button></li>
+            <li><button class="item align-middle btn text-slate-300 m-2 w-45"><a href="#vlog">Mi Misión</a></button></li>
+            <li><button class="item align-middle btn text-slate-300 m-2 w-45"><a href="#contact">Contactame</a></button></li>
         
 		</ul>
 	</div>

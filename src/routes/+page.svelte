@@ -6,6 +6,7 @@ import Vlog from '../routes/sections/vlog/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
 import menuIcon from '$lib/icon/menu-desplegable.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
+import './../index.css'
 
 let y;
 $:windowsWidth=0;

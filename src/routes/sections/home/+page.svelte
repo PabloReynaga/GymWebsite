@@ -1,18 +1,23 @@
 <script>
     import Img from '$lib/img/backGround.png'
     import Button from './../../../componets/button.svelte'
-    import IconWP from '$lib/icon/whatsapp.png'
+    
+   
+    
+    
     $:responsiveMargin /= 20;
     $:responsiveMarginVar= responsiveMargin;
 </script>
 <body>
+    
     <h1 style="margin-top: {responsiveMarginVar}px" class="titulo">Masteriza tu versión superior</h1>
+    <h1 class="bg-white">Tailwind</h1>
     <div class="img-container">
         
         <img class="img" alt="img" src={Img}>
         
     </div>    
-    <div class="button-container" >
+    <div class="button-container " >
         
             <a href="https://form.jotform.com/230244462128045">
                 <Button buttonValue="Comienza ahora!" ></Button>
@@ -62,12 +67,11 @@
     justify-content: center;
     margin-bottom: 20px;
     
+    
 }
-.test{
-    background-color: white;
+.h{
+    color: white;
 }
-.iconWp{
-    height: 200px;
-}
+
 
 </style>

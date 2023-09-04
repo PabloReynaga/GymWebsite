@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import "./index.css";
 
 html,body,h1{
   margin: 0;
@@ -48,3 +49,4 @@ section{
 section:nth-child(odd){
   background-color: $bg-dark ;
 }
+
