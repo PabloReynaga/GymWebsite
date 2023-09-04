@@ -190,6 +190,7 @@
     padding: 8px;
     box-sizing: content-box;
     color: $bg-dark;
+    background-color: #3a3a3b;
       
 }
 
@@ -207,6 +208,8 @@
     margin-top: 60px;
    
 }
-
-
+.p{
+    display: flex;
+    justify-content: center;
+}
 </style>
