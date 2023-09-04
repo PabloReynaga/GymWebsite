@@ -61,26 +61,27 @@ setInterval(()=>{
     <a href="#home">
         <img class="icon" alt="img" src={icon}/> 
     </a>
+
     {#if windowsWidth>650}
     <nav class="items-nav">
-        
         <a href="#home" class:active={colored.homeButton} on:click={()=>{colored.homeButton=true, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= false}}>Inicio</a>
         <a href="#about" class:active={colored.aboutButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = true, colored.vlogButton = false, colored.contactMeButton= false}}>Trasformación</a>
         <a href="#vlog" class:active={colored.vlogButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = false, colored.vlogButton = true, colored.contactMeButton= false}}>Mi Misión</a>
-        <a href="#contact" class:active={colored.contactMeButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= true}}>Contacto</a>
-
-        
-      
+        <a href="#contact" class:active={colored.contactMeButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= true}}>Contacto</a> 
     </nav>
     {/if}
+
+
     {#if windowsWidth<650}
-    <MenuResponsive></MenuResponsive>
+    <div class="responsive-menu">
+        <MenuResponsive></MenuResponsive>
+    </div>
+    
     {/if}
     
 
 </header>
 <body>
-    
     
     <section id="home">
         <Home/>
@@ -125,13 +126,12 @@ setInterval(()=>{
 }
 
 .responsive-menu{
-    background-color: $bg-bright;
-    position: sticky;
-    float: right;
-    padding: 0px;
-    margin: 0px;
-    height: 8px;
-    width: 150px;
+    display: flex;
+   float: right;
+   justify-content: right;
+  
+   
+   margin-left: 30%;
 
 }
 @media only screen and (max-width:650px){

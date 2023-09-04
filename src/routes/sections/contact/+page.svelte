@@ -86,6 +86,7 @@
     background-size: 30px;
     background-position: left;
     background-position-x: 3px;
+    background-color: #3a3a3b;
 }
 .input-field-name:focus{
     outline: none;
@@ -105,6 +106,7 @@
     background-size: 30px;
     background-position: left;
     background-position-x: 5px;
+    background-color: #3a3a3b;
     
 }
 .input-field-mail:focus{
@@ -125,6 +127,7 @@
     background-size: 30px;
     background-position: left;
     background-position-x: 5px;
+    background-color: #3a3a3b;
     
 }
 .input-field-phone:focus{
@@ -145,6 +148,7 @@
     background-size: 30px;
     background-position: left;
     background-position-x: 5px;
+    background-color: #3a3a3b;
     
 }
 .input-field-instagram:focus{

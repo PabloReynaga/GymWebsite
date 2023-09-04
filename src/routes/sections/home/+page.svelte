@@ -11,7 +11,6 @@
 <body>
     
     <h1 style="margin-top: {responsiveMarginVar}px" class="titulo">Masteriza tu versión superior</h1>
-    <h1 class="bg-white">Tailwind</h1>
     <div class="img-container">
         
         <img class="img" alt="img" src={Img}>

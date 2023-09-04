@@ -63,15 +63,15 @@
 <style lang="scss">
 
 .button{
-    
+	
     width: auto;
-    margin-right: 8px;
+	
+    margin-left: 25px;
 }
 .dropdown-content{
 	
 	
 	padding: 15px;
-	
 	height: 400px;
 	justify-content: center;
 	display: flex;
@@ -79,7 +79,7 @@
 .item{
 	height: 70px;
 	font-size: 17px;
-	background-color: $bg-gray;
+	
     display:flex;
 	align-items: center;
 	vertical-align: middle;
