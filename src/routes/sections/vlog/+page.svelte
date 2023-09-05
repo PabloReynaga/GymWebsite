@@ -53,7 +53,7 @@ $:responsiveMarginVar= responsiveMargin
 
 <style lang="scss">
     *{
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;

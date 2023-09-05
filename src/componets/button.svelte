@@ -11,7 +11,7 @@ export let img;
     <button class="main-button">
         <div class="button-container">
             <p class="button-text">{buttonValue}</p>
-            <img class="iconWP" src={img}>
+            <img class="iconWP" src={img} alt="img">
         </div>
     </button>
 </main>
@@ -23,7 +23,7 @@ export let img;
     font-size: 20px;
     margin: auto;
     margin-top: 25px;
-    width: 220px;
+    width: 250px;
     height: 50px;
     border: none;
     outline: none;

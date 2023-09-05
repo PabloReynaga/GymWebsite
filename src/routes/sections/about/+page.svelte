@@ -22,15 +22,23 @@ $: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;
         para poder ver más:
     </p>
     <div class="container-icons">
-        <a href="https://instagram.com/cacholofitness?igshid=MzRlODBiNWFlZA==">
-            <button class="icon-instagram">
-                <img  alt="img" src={IconInstagram}>
+        <div class="container-icons-instagram">
+            <a href="https://instagram.com/cacholofitness?igshid=MzRlODBiNWFlZA==">
+                <button class="icon-instagram">
+                    <img  alt="img" src={IconInstagram}>
+                </button>
+            </a>
+
+        </div>
+        <div class="container-icons-youtube">
+            <button class="icon-youtube">
+                <img  alt="img" src={IconYouTube}>
             </button>
-        </a>
+
+        </div>
+      
        
-        <button class="icon-youtube">
-            <img  alt="img" src={IconYouTube}>
-        </button>
+        
     </div>
 </div>
 <style lang="scss">
@@ -84,13 +92,13 @@ $: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;
         justify-content: center;
     }
     .icon-instagram{
-        width: 35px;
+        width: 50px;
         display: flex;
         justify-content: center;
         margin-right: 15px;
     }
     .icon-youtube{
-        width: 40px;
+        width: 55px;
         display: flex;
         justify-content: center;
         margin-right: 15px;
@@ -103,5 +111,19 @@ $: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;
     box-sizing: border-box;
     margin: auto;
 
+    }
+    .container-icons-instagram{
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content: right;
+        margin-right: 20px;
+    }
+    .container-icons-youtube{
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content: left;
+      
     }
 </style>

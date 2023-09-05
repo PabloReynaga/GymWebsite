@@ -1,6 +1,7 @@
 <script>
     import Img from '$lib/img/backGround.png'
     import Button from './../../../componets/button.svelte'
+    import Logo from './../../../lib/icon/main-icon.png'
 
 $:responsiveMargin /= 20;
 $:responsiveMarginVar= responsiveMargin;
@@ -18,7 +19,7 @@ $:responsiveMarginVar= responsiveMargin;
     <div class="button-container " >
         
             <a href="https://form.jotform.com/230244462128045">
-                <Button buttonValue="Comienza ahora!" ></Button>
+                <Button buttonValue="Comienza ahora!" img={Logo} ></Button>
             </a>
     </div>
      
@@ -59,9 +60,13 @@ $:responsiveMarginVar= responsiveMargin;
     background: $bg-dark;
 }
 .button-container{
+    
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    
     
     
 }

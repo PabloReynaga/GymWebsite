@@ -1,6 +1,6 @@
 <script>
     import Button from './../../../componets/button.svelte'
-    import Pesa_icono from '$lib/icon/main-icon.png'
+    import Mainlogo from '$lib/icon/main-icon.png'
     $:responsiveMargin /= 20;
     $:responsiveMarginVar= responsiveMargin;
 
@@ -33,7 +33,7 @@
                 <textarea class="text-area-field" type="text" id="massage" name="Mensaje"
                 >Hola! mi nombre es... y quiero empezar! </textarea>
                 <div class="button-container">
-                    <Button buttonValue="Enviar" img={Pesa_icono}></Button>
+                    <Button buttonValue="Enviar" img={Mainlogo}></Button>
                 </div> 
                 </form>
                 
