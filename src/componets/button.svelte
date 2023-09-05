@@ -28,7 +28,7 @@ export let img;
     border: none;
     outline: none;
     color: #fff;
-    background: $bg-dark;
+    background: #0000;
     cursor: pointer;
     position: relative;
     z-index: 0;

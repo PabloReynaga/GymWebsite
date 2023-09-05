@@ -51,7 +51,7 @@
 		</button>
 		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:visibility={isDropdownOpen ? 'visible' : 'hidden'}>
 			<li><button class="item btn m-2 w-45"><a  class="text-in-botton"  href="#home">Inicio</a></button></li>
-			<li><button class="item btn m-2 w-45 "><a class="text-in-botton"  href="#about">Trasformación</a></button></li>
+			<li><button class="item btn m-2 w-45 "><a class="text-in-botton"  href="#about">Transformación</a></button></li>
             <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#vlog">Mi Misión</a></button></li>
             <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#contact">Contactame</a></button></li>
         
