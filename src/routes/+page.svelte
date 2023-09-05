@@ -14,10 +14,6 @@ $:innerHeight= 0;
 $:firstScreen = innerHeight-90;
 $:secondScrenn= firstScreen + firstScreen;
 $:thirdScreen= secondScrenn + firstScreen;
-$:console.log(innerHeight-70)
-
-$:console.log(y)
-
 $: colored = {
     homeButton : true, 
     aboutButton :false,

@@ -28,6 +28,9 @@ $:responsiveMarginVar= responsiveMargin
                 
                
             </div>
+            <div>
+                
+            </div>
            
             <img class="first-img" alt="img" src={GymImgPerson}>
         </div>
@@ -42,15 +45,8 @@ $:responsiveMarginVar= responsiveMargin
                 {#if windowsWidth>320}
                 <img class="chain-right" alt="img" src={ChainRight}>
                 {/if}
-                
-
             </div>
-           
           </div>
-         
-
-         
-
         </div>
     </div>
 </div>
@@ -92,9 +88,6 @@ $:responsiveMarginVar= responsiveMargin
         height: 50%;
         display: flex;
         align-items: center;
-        
-        
-        
     }
   
     .second-container{
@@ -135,7 +128,6 @@ $:responsiveMarginVar= responsiveMargin
         height: 80%;
         display: flex;
         float: right;
-      
 
     }   
     .container-first-img{

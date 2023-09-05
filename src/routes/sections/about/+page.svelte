@@ -6,20 +6,11 @@ $:responsiveMargin /= 20;
 $:responsiveMarginVar= responsiveMargin;
 $:windowWidth = 0;
 $: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;
-
-
-$:console.log(windowWidth+"das")
-$: console.log(result+"ella")
-
-
-
-
-
 </script>
 <svelte:window bind:innerHeight={responsiveMargin} bind:innerWidth={windowWidth}/>
 <div class="section-container">
     <div class="header-container">
-        <h1 style="margin-top: {responsiveMarginVar+15}px;" class= "title">Mi Trasformación</h1>
+        <h1 style="margin-top: {responsiveMarginVar+15}px;" class= "title">Mi Transformación</h1>
         <p class = "subtitle">Con mucho enfoque y dedicación cree un plan
            para lograr un cambio real y duradero.
         </p>
@@ -41,12 +32,7 @@ $: console.log(result+"ella")
             <img  alt="img" src={IconYouTube}>
         </button>
     </div>
-    
-    
-    
 </div>
-
-
 <style lang="scss">
     *{
     font-size: 20px;
@@ -118,5 +104,4 @@ $: console.log(result+"ella")
     margin: auto;
 
     }
- 
 </style>

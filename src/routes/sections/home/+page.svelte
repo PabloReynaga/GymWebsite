@@ -1,30 +1,27 @@
 <script>
     import Img from '$lib/img/backGround.png'
     import Button from './../../../componets/button.svelte'
-    
-   
-    
-    
-    $:responsiveMargin /= 20;
-    $:responsiveMarginVar= responsiveMargin;
+
+$:responsiveMargin /= 20;
+$:responsiveMarginVar= responsiveMargin;
+
 </script>
+
 <body>
     
     <h1 style="margin-top: {responsiveMarginVar}px" class="titulo">Masteriza tu versión superior</h1>
     <div class="img-container">
-        
+
         <img class="img" alt="img" src={Img}>
-        
+
     </div>    
     <div class="button-container " >
         
             <a href="https://form.jotform.com/230244462128045">
                 <Button buttonValue="Comienza ahora!" ></Button>
             </a>
-
     </div>
      
-    
 </body>
 <svelte:window bind:innerHeight={responsiveMargin}/>
 <style lang="scss">

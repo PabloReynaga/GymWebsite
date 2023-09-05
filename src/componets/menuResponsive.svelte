@@ -1,19 +1,18 @@
 <script>
 	import './../../src/index.css'
    $: windowsWidth-=50;
-   $:console.log(windowsWidth+"!");
-   $: margin_left = windowsWidth -100;
+   $: margin_left = windowsWidth -83;
 
 
-  let isDropdownOpen = false // default state (dropdown close)
+  let isDropdownOpen = false 
 
   const handleDropdownClick = () => {
-    isDropdownOpen = !isDropdownOpen // togle state on click
+    isDropdownOpen = !isDropdownOpen
   }
 
   const handleDropdownFocusLoss = ({ relatedTarget, currentTarget }) => {
-    // use "focusout" event to ensure that we can close the dropdown when clicking outside or when we leave the dropdown with the "Tab" button
-    if (relatedTarget instanceof HTMLElement && currentTarget.contains(relatedTarget)) return // check if the new focus target doesn't present in the dropdown tree (exclude ul\li padding area because relatedTarget, in this case, will be null) 
+   
+    if (relatedTarget instanceof HTMLElement && currentTarget.contains(relatedTarget)) return 
     isDropdownOpen = false
   }
 </script>
@@ -64,17 +63,17 @@
 
 .button{
 	
-    width: auto;
-	
-    margin-left: 25px;
+    
+    margin-left: 45%;
 }
 .dropdown-content{
-	
-	
-	padding: 15px;
-	height: 400px;
 	justify-content: center;
 	display: flex;
+	padding: 15px;
+	height: 400px;
+	width: 500px;
+	background-color: #3a3a3b;
+	
 }
 .item{
 	height: 70px;
@@ -83,13 +82,17 @@
     display:flex;
 	align-items: center;
 	vertical-align: middle;
+	text-align: center;
 	a{
 		display:flex;
 		align-items: center;
 		vertical-align: middle;
+		margin-top: 18px;
+		
 	}
 	
 }
+
 
 
     
