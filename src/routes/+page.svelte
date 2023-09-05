@@ -4,7 +4,6 @@ import Contact from '..//routes/sections/contact/+page.svelte'
 import About from '../routes/sections/about/+page.svelte'
 import Vlog from '../routes/sections/vlog/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
-import menuIcon from '$lib/icon/menu-desplegable.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
 
