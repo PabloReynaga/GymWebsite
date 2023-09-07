@@ -19,7 +19,7 @@
 <svelte:window bind:innerWidth={windowsWidth}/>
 
 <div class="prueba">
-	<div class="dropdown" on:focusout={handleDropdownFocusLoss}>
+	<div class="dropdown" >
 		<button class="button btn " on:click={handleDropdownClick} >
 		{#if isDropdownOpen}
 			<svg
