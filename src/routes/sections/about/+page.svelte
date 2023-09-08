@@ -2,7 +2,7 @@
     import Img from '$lib/img/foto_about.png'
     import IconInstagram from '$lib/icon/instagram.png'
     import IconYouTube from '$lib/icon/youtube.png'
-$:responsiveMargin /= 20;
+$:responsiveMargin /= 13;
 $:responsiveMarginVar= responsiveMargin;
 $:windowWidth = 0;
 $: result = windowWidth> 500? "max-width: 70%;  max-height: 70%; ": " " ;

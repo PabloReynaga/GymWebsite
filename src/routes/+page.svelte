@@ -58,7 +58,7 @@ setInterval(()=>{
     </a>
 
     {#if windowsWidth>650}
-    <nav class="items-nav">
+    <nav>
         <a href="#home" class:active={colored.homeButton} on:click={()=>{colored.homeButton=true, colored.aboutButton = false, colored.vlogButton = false, colored.contactMeButton= false}}>Inicio</a>
         <a href="#about" class:active={colored.aboutButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = true, colored.vlogButton = false, colored.contactMeButton= false}}>Transformación</a>
         <a href="#vlog" class:active={colored.vlogButton} on:click={()=>{colored.homeButton=false, colored.aboutButton = false, colored.vlogButton = true, colored.contactMeButton= false}}>Mi Misión</a>
@@ -70,8 +70,9 @@ setInterval(()=>{
     {#if windowsWidth<650}
     <div class="responsive-menu">
         <MenuResponsive>
-           
+            
         </MenuResponsive>
+        
     </div>
     
     {/if}
@@ -95,6 +96,11 @@ setInterval(()=>{
     <section id="contact" >
         <Contact/>
     </section>
+
+    <div class="focus-lost">
+        <h1>hola</h1>
+
+    </div>
 
 </body>
 <footer>
@@ -127,6 +133,13 @@ setInterval(()=>{
 nav a{
     display: none;
 }
+
+}
+.focus-lost{
+    background-color: red;
+    height: 30%;
+    width: 100%;
+    position: fixed;
 
 }
 

@@ -6,7 +6,7 @@
     
     
 $:windowsWidth = 0;
-$:responsiveMargin /= 20
+$:responsiveMargin /= 15
 $:responsiveMarginVar= responsiveMargin
 
 </script>
