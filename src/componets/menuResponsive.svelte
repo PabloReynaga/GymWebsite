@@ -2,7 +2,7 @@
 	import './../../src/index.css'
    $: windowsWidth-=50;
    $: margin_left = windowsWidth -65;
-export let router = "";
+
 
 
   let isDropdownOpen = false 
@@ -52,10 +52,10 @@ export let router = "";
 		</button>
 		
 		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:display={isDropdownOpen ? 'flex' : 'none'}>
-			<li><button class="item btn m-2 w-45"><a href="#home">Inicio</a></button></li>
-			<li><button class="item btn m-2 w-45 "><a  href="#about">Transformación</a></button></li>
-            <li><button class="item btn m-2 w-45"><a  href="#vlog">Mi Misión</a></button></li>
-            <li><button class="item btn m-2 w-45"><a  href="#contact">Contactame</a></button></li>
+			<li><button class="item btn m-2 w-45" on:click={handleDropdownClick}><a href="https://5d09-84-46-89-26.ngrok-free.app/#home">Inicio</a></button></li>
+			<li><button class="item btn m-2 w-45 " on:click={handleDropdownClick}><a  href="https://5d09-84-46-89-26.ngrok-free.app/#about">Transformación</a></button></li>
+            <li><button class="item btn m-2 w-45" on:click={handleDropdownClick}><a  href="https://5d09-84-46-89-26.ngrok-free.app/#vlog">Mi Misión</a></button></li>
+            <li><button class="item btn m-2 w-45" on:click={handleDropdownClick}><a  href="https://5d09-84-46-89-26.ngrok-free.app/#contact">Contactame</a></button></li>
 		</ul>
 	</div>
 	
@@ -99,12 +99,6 @@ export let router = "";
 	margin-top: -25px;
 	margin-left: -40px;
 	
-
 }
-
-
-
-
-
-    
+   
 </style>
