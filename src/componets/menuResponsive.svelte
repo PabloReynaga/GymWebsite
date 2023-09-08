@@ -1,7 +1,8 @@
 <script>
 	import './../../src/index.css'
    $: windowsWidth-=50;
-   $: margin_left = windowsWidth -83;
+   $: margin_left = windowsWidth -65;
+export let router = "";
 
 
   let isDropdownOpen = false 
@@ -19,7 +20,7 @@
 <svelte:window bind:innerWidth={windowsWidth}/>
 
 <div class="prueba">
-	<div class="dropdown" >
+	<div class="dropdown-menu" on:focusout={handleDropdownFocusLoss}>
 		<button class="button btn " on:click={handleDropdownClick} >
 		{#if isDropdownOpen}
 			<svg
@@ -49,30 +50,30 @@
 							</svg>
 			{/if}
 		</button>
+		
 		<ul style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:display={isDropdownOpen ? 'flex' : 'none'}>
-			<li><button class="item btn m-2 w-45"><a  class="text-in-botton"  href="#home">Inicio</a></button></li>
-			<li><button class="item btn m-2 w-45 "><a class="text-in-botton"  href="#about">Transformación</a></button></li>
-            <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#vlog">Mi Misión</a></button></li>
-            <li><button class="item btn m-2 w-45"><a  class="text-in-botton" href="#contact">Contactame</a></button></li>
-        
+			<li><button class="item btn m-2 w-45"><a href="#home">Inicio</a></button></li>
+			<li><button class="item btn m-2 w-45 "><a  href="#about">Transformación</a></button></li>
+            <li><button class="item btn m-2 w-45"><a  href="#vlog">Mi Misión</a></button></li>
+            <li><button class="item btn m-2 w-45"><a  href="#contact">Contactame</a></button></li>
 		</ul>
 	</div>
+	
 	
 </div>
 <style lang="scss">
 
-.button{
-	
-    
-    margin-left: 45%;
-}
+
 .dropdown-content{
 	justify-content: center;
 	display: flex;
-	padding: 15px;
+	
 	height: 400px;
-	width: 500px;
+	width: 600px;
 	background-color: #3a3a3b;
+	z-index: 999999;
+	
+	
 	
 }
 .item{
@@ -92,6 +93,16 @@
 	}
 	
 }
+
+.prueba{
+	position:absolute;
+	margin-top: -25px;
+	margin-left: -40px;
+	
+
+}
+
+
 
 
 

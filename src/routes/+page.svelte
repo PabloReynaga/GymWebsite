@@ -69,7 +69,9 @@ setInterval(()=>{
 
     {#if windowsWidth<650}
     <div class="responsive-menu">
-        <MenuResponsive></MenuResponsive>
+        <MenuResponsive>
+           
+        </MenuResponsive>
     </div>
     
     {/if}
@@ -120,15 +122,7 @@ setInterval(()=>{
     object-fit: cover;
 }
 
-.responsive-menu{
-    display: flex;
-   float: right;
-   justify-content: right;
-  
-   
-   margin-left: 30%;
 
-}
 @media only screen and (max-width:650px){
 nav a{
     display: none;
