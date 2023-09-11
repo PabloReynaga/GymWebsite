@@ -60,7 +60,7 @@
 				<a  href="#contact" class="item btn m-2 w-45" on:click={handleDropdownClick}>Contactame</a>
 
 			</div>
-			<button class="focus-lost" on:click={handleDropdownFocusLoss}></button>
+			<button class="focus-lost" on:click={handleDropdownFocusLoss} style:display={isDropdownOpen ? 'flex' : 'none'}></button>
 
 		</nav>
 		
@@ -95,7 +95,7 @@
 
 
 .focus-lost{
-    background-color: transparent;
+    background-color: red;
     height: 50%;
     width: 150%;
 	float: right;
