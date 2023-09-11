@@ -95,7 +95,7 @@
 
 
 .focus-lost{
-    background-color: red;
+    background-color: transparent;
     height: 50%;
     width: 150%;
 	float: right;
