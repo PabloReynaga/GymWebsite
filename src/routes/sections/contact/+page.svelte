@@ -15,7 +15,7 @@
                     <p class="p">Si te quedaron dudas contactame para ver tu situación y personalizar un plan específico para ti.</p>
                 </div>
                 
-                <form action="https://formsubmit.co/angelcerverolopez@gmail.com" method="post">
+                <form action="https://formsubmit.co/Cacholofitness@gmail.com" method="post">
                     
                 <label class="label-input"  for="name">Nombre*</label>
                 <input class="input-field-name" type="text" id="name" required name="Nombre" autocomplete="off">
