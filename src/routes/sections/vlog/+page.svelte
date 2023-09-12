@@ -17,7 +17,7 @@ $:responsiveMarginVar= responsiveMargin
         <div class="first-container">
             <div class="text-chain-container">
                 <p class="first-text">Me convertí en fitness-coach y cambié mi realidad.
-                    Ahora yo te guiaré para que tú puedas cambies la tuya.
+                    Ahora yo te guiaré para que tú puedas cambiar la tuya.
                 </p>
                 <div class="container-first-img">
                     {#if windowsWidth>320}

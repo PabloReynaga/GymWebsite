@@ -18,7 +18,7 @@ $:responsiveMarginVar= responsiveMargin;
     </div>    
     <div class="button-container " >
         
-            <a href="https://wa.me/17670688111?text=Hola!%20Quiero%20empezar!">
+            <a href="https://wa.me/34695193268?text=Hola!%20Quiero%20empezar!">
                 <Button buttonValue="Comienza ahora!" img={Logo} ></Button>
             </a>
     </div>
