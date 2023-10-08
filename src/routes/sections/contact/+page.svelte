@@ -14,7 +14,7 @@
                     <h1 style="margin-top: {responsiveMarginVar}px" class="title">Conviertete en tu mejor versión!</h1>
                     <p class="p">Si te quedaron dudas contactame para ver tu situación y personalizar un plan específico para ti.</p>
                 </div>
-                
+                <h1 class="title talk">Vamos a hablar!</h1>
                 <form action="https://formsubmit.co/Cacholofitness@gmail.com" method="post">
                     
                 <label class="label-input"  for="name">Nombre*</label>
@@ -23,13 +23,10 @@
                 <label class="label-input" for="mail">Mail*</label>
                 <input class="input-field-mail" type="mail" id="mail" required name="Mail" autocomplete="off">
             
-                <label class="label-input" for="number">Whatsapp*</label>
+                <label class="label-input" for="number">Número teléfonico*</label>
                 <input class="input-field-phone" type="text" id="number" required name="Whatsapp" autocomplete="off">
-
-                <label class="label-input" for="instagram">Instagram</label>
-                <input class="input-field-instagram" type="text" id="instagram" name="Instagram" autocomplete="off">
     
-                <label class="label-input" for="massage">Cuál es tu duda?</label>
+                <label class="label-input" for="massage">Escribe tu mensaje aquí...</label>
                 <textarea class="text-area-field" type="text" id="massage" name="Mensaje"
                 >Hola! mi nombre es... y quiero empezar! </textarea>
                 <div class="button-container">
@@ -134,27 +131,7 @@
     outline: none;
     box-shadow:0px 0px 1px 1px $primary;
 }
-.input-field-instagram{
-    justify-content: center;
-    display:flex;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 8px;
-    margin: auto;
-    color: $bg-dark;
-    background-image: url(../../../lib/icon/compartir.png);
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    background-size: 30px;
-    background-position: left;
-    background-position-x: 5px;
-    background-color: #3a3a3b;
-    
-}
-.input-field-instagram:focus{
-    outline: none;
-    box-shadow:0px 0px 1px 1px $primary;
-}
+
 .label-input{
     justify-content: center;
     display: flex;
@@ -168,7 +145,9 @@
     padding: 10px;
     box-sizing: border-box;
     color: $secondary;
-    
+    .talk{
+        font-size: 25px ;
+    }
     
 }
 .p{

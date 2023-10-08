@@ -98,7 +98,7 @@ setInterval(()=>{
     </section>
 
     <div class="focus-lost">
-        <h1>hola</h1>
+
 
     </div>
 
