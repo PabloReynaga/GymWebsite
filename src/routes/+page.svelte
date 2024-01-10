@@ -6,7 +6,7 @@ import Vlog from '../routes/sections/vlog/+page.svelte'
 import icon from '$lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
-
+    
 let y;
 $:windowsWidth=0;
 $:innerHeight= 0;
@@ -48,8 +48,8 @@ setInterval(()=>{
             break;
     } 
 },10)
-
-</script>
+ 
+  </script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} bind:innerWidth={windowsWidth}/>
 <header>
@@ -123,9 +123,11 @@ setInterval(()=>{
     color: $primary;
 }
 .icon{
-    height: 30px;
+    height: 35px;
     transform: scale(2);
     object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 

@@ -1,10 +1,8 @@
 <script>
-
 export let buttonValue;
 export let img;
 
 
-    
 </script>
 
 <main>

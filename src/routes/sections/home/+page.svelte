@@ -1,16 +1,27 @@
 <script>
     import Img from '$lib/img/backGround.png'
+    import { onMount } from 'svelte';
     import Button from './../../../componets/button.svelte'
     import Logo from './../../../lib/icon/main-icon.png'
+    import { gsap } from 'gsap'
 
-$:responsiveMargin /= 20;
-$:responsiveMarginVar= responsiveMargin;
+let animationMainContainer;
+
+onMount(()=>{
+    gsap.from(animationMainContainer,{
+        duration: 1.5,
+         autoAlpha: 0,
+         ease: "Power2.out"
+    })
+})
+
 
 </script>
-
-<body>
+<div class="main-container" bind:this={animationMainContainer}>
+    <div class="title-container">
+        <h1  class="title">Bienvenido al team <span class="red-text">Cacholo Fitness!</span></h1>
+    </div>
     
-    <h1 style="margin-top: {responsiveMarginVar}px" class="titulo">Masteriza tu versión superior</h1>
     <div class="img-container">
 
         <img class="img" alt="img" src={Img}>
@@ -22,9 +33,7 @@ $:responsiveMarginVar= responsiveMargin;
                 <Button buttonValue="Comienza ahora!" img={Logo} ></Button>
             </a>
     </div>
-     
-</body>
-<svelte:window bind:innerHeight={responsiveMargin}/>
+</div>
 <style lang="scss">
 *{
     font-size: 20px;
@@ -33,17 +42,18 @@ $:responsiveMarginVar= responsiveMargin;
     font-family: 'Montserrat', sans-serif;
     
 }
-.titulo{
-    display: flex;
+.title{
     position:relative;
     color: $secondary;
-    font-size: 25px;
-    justify-content: center;
+    font-size: 27px;
     text-align: center;
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
     top:70px;
+    font-weight: bold;
+
+}
+.red-text{
+    font-size: 27px;
+    color: $primary;
 }
 .img-container{
   
@@ -56,21 +66,27 @@ $:responsiveMarginVar= responsiveMargin;
   object-fit:cover;
   object-position: center;
 }
-*{
-    background: $bg-dark;
-}
+
 .button-container{
-    
-    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 88%;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-bottom: 15px;
+    margin-bottom: -10px;
     padding-bottom: 10px;
     
     
     
 }
-
+.title-container{
+    display: flex;
+    margin: auto;
+    max-width: 300px;
+    padding-left:15px ;
+    padding-right: 15px;
+}
 
 
 </style>

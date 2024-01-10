@@ -1,29 +1,24 @@
 <script>
-	import './../../src/index.css'
-   $: windowsWidth-=50;
-   $: margin_left = windowsWidth -65;
+import './../../src/index.css'
+import icon from '$lib/icon/main-icon.png'
 
-
-  let isDropdownOpen = false 
+let isMenuOpen = false 
   
 
   const handleDropdownClick = () => {
-    isDropdownOpen = !isDropdownOpen
+    isMenuOpen = !isMenuOpen
   }
 
   const handleDropdownFocusLoss = () => {
    
-    if(isDropdownOpen === true){
-		isDropdownOpen=false
+    if(isMenuOpen === true){
+		isMenuOpen=false
 	}
   }
 </script>
-<svelte:window bind:innerWidth={windowsWidth}/>
 
-<div class="main-container">
-	<div class="dropdown-menu" >
-		<button class="button btn " on:click={handleDropdownClick} >
-		{#if isDropdownOpen}
+<button class="button btn " on:click={handleDropdownClick} >
+		{#if isMenuOpen}
 			<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
@@ -50,31 +45,33 @@
 									d="M4 6h16M4 12h16M4 18h16" />
 							</svg>
 			{/if}
-		</button>
-		<nav >
-			<div style="width:{windowsWidth}px; margin-left: -{margin_left}px;}" class="dropdown-content menu p-2 shadow bg-base-200 rounded-box " style:display={isDropdownOpen ? 'flex' : 'none'}>
-				
-				<a href="#home" class="item btn m-2 w-45" on:click={handleDropdownClick}>Inicio</a>
-				<a  href="#about" class="item btn m-2 w-45" on:click={handleDropdownClick}>Transformación</a>
-				<a  href="#vlog" class="item btn m-2 w-45" on:click={handleDropdownClick}>Mi Misión</a>
-				<a  href="#contact" class="item btn m-2 w-45" on:click={handleDropdownClick}>Contactame</a>
+</button>
+<div class={isMenuOpen? "menu-container-open":"menu-container-close"}>
+		<div class="sidebar-menu">
+			<img src={icon} alt="img" class="icon">
+			<nav class="nav-items">
+			<a href="#home" class="item" on:click={handleDropdownClick}>Inicio</a>
+			<div class="details-lines"></div>
+			<a  href="#about" class="item" on:click={handleDropdownClick}>Transformación</a>
+			<div class="details-lines"></div>
+			<a  href="#vlog" class="item" on:click={handleDropdownClick}>Mi Misión</a>
+			<div class="details-lines"></div>
+			<a  href="#contact" class="item" on:click={handleDropdownClick}>Contactame</a>
+			<div class="details-lines"></div>
 
-			</div>
-			<button class="focus-lost" on:click={handleDropdownFocusLoss} style:display={isDropdownOpen ? 'flex' : 'none'}></button>
+			</nav>
+			
 
-		</nav>
-		
-	</div>
-	
-	
+		</div>
 </div>
+<button class={isMenuOpen?"focus-lost":"focus-lost-close"} on:click={handleDropdownFocusLoss} ></button>
 <style lang="scss">
 
 
 .dropdown-content{
 	justify-content: center;
 	display: flex;
-	height: 400px;
+	height: 100%;
 	width: 600px;
 	background-color: #3a3a3b;	
 }
@@ -87,21 +84,72 @@
 	text-align: center;
 }
 
-.main-container{
+.menu-container-close{
 	position:absolute;
-	margin-top: -25px;
-	margin-left: -40px;
+	height: 900px;
+	width: 0%;
+	right: -500px;
+	
+}
+.menu-container-open{
+	position:absolute;
+	min-height: 100%;
+	width: 80%;
+	right: 0px;
+	z-index: 0;
+	margin-top: -70px;
 }
 
 
 .focus-lost{
-    background-color: transparent;
-    height: 50%;
-    width: 150%;
-	float: right;
-	margin-left: -100%;
-    position: fixed;
+	position: absolute;
+	left: 0;
+	top: 0;
+    min-height: 900px;
+    width: 100px;
+	max-width: 20%;
+	background-color: $bg-dark;
+	opacity: .5;
+	
+}
+.focus-lost-close{
 
+}
+.sidebar-menu{
+	display: block;
+	height: 900px;
+	width: 100%;
+	background-color: $bg-dark;
+	
+}
+.item{
+	font-size: 18px;
+	justify-content: left;
+	margin-left: 30px;
+	color: $bg-bright;
+	margin-top: -10px;
+	
+
+}
+.icon{
+	transform: scale(.4);
+	margin: auto;
+	 
+	
+}
+.button{
+	position: relative;
+	z-index: 100;
+	
+	
+}
+.nav-items{
+	margin-top: -80px;
+}
+.details-lines{
+	border: solid 1px $primary;
+	margin-top: -10px;
+	margin-bottom: 30px;
 
 }
    
