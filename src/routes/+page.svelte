@@ -144,6 +144,8 @@ nav a{
     position: fixed;
 
 }
-
+.responsive-menu{
+    min-height: 100%;
+}
 
 </style>

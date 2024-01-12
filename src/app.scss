@@ -4,10 +4,11 @@
 html,body,h1{
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Gill Sans', sans-serif;
   color: $bg-dark;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  height: 100%;
 }
 header{
   position: fixed;
@@ -22,6 +23,7 @@ header{
   align-items: center;
   z-index: 100;
   box-sizing: border-box;
+  font-family: 'Gill Sans', sans-serif;
   
 }
 nav a{
