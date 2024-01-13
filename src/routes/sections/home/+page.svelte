@@ -1,10 +1,11 @@
 <script>
-    import Img from '$lib/img/backGround.png'
     import { onMount } from 'svelte';
     import Button from './../../../componets/button.svelte'
     import Logo from './../../../lib/icon/main-icon.png'
     import { gsap } from 'gsap'
     import imgMancuernas from '$lib/img/mancuernas.png'
+    import InfoCard from '../../../componets/infoCard.svelte';
+    import HomeIcon from '$lib/icon/home-icon.png' 
 
 let animationMainContainer;
 
@@ -31,21 +32,40 @@ onMount(()=>{
     </div> 
     <div class="img-mancuernas-container">
         <img alt="img" class="img-mancuernas" src={imgMancuernas}>
-        <div class="titulos-manuernas-img-container">
-            <p>Que optienes?</p>
-            <p>Planes de entrenamiento personalizados</p>
-            <p></p>
+        <div class="manuernas-img-content-container">
+            <p class="title-img-container">Qué optienes?</p>
+            <p class="subtitle-img-container">Planes de entrenamiento personalizados</p>
+            <p class="texto-img-container">¡Por fin un programa de entrenamiento diseñado para ti! ¡Todos los ejercicios serán demostrados en video por mí para que puedas realizarlos correctamente! Se sentirá como si estuviéramos trabajando en persona.</p>
+            <div class="info-cards">
+                <InfoCard 
+                title="✓ Entrenamiento en casa y gimnasio" 
+                text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
+                iconSorce={HomeIcon}
+                iconSize = 40px
+                ></InfoCard>
+                <InfoCard 
+                title="✓ Entrenamiento en casa y gimnasio" 
+                text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
+                iconSorce={HomeIcon}
+                iconSize = 40px
+                ></InfoCard>
+                <InfoCard 
+                title="✓ Entrenamiento en casa y gimnasio" 
+                text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
+                iconSorce={HomeIcon}
+                iconSize = 40px
+                ></InfoCard>
+                <div></div>
+                <div></div>
+            </div> 
         </div>
-        <div class="info-cards">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> 
+     
     </div>
    
   
 </div>
 <style lang="scss">
+    @import '../../../variables.scss';
 *{
     font-size: 20px;
     margin: 0px;
@@ -59,7 +79,7 @@ onMount(()=>{
 .title{
     position:relative;
     color: $secondary;
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
@@ -67,13 +87,8 @@ onMount(()=>{
 
 }
 .red-text{
-    font-size: 27px;
+    font-size: 30px;
     color: $primary;
-}
-.img-container{
-  
-    display: flex;
-    height: 600px;
 }
 .img{
   width: 100%;
@@ -105,6 +120,7 @@ p{
     margin-right: 70px;
 }
 .img-mancuernas-container{
+    position: relative;
     width: 100%;
     height: 50%;
 }
@@ -117,7 +133,42 @@ p{
     filter: opacity(.3);
     
 }
+.title-img-container{
+    
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary;
+    margin-bottom: 10px;
 
+}
+.manuernas-img-content-container{
+    position: absolute;
+    top: 0;
+    margin-top: 5%;
+    width: 100%;
+    
+}
+.subtitle-img-container{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.texto-img-container{
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.info-cards{
+    position: relative;
+    top: 0; 
+    
+}
+.subtitle-img-container{
+    text-align: center;
+}
 @media only screen and (width < 600px){
     .title-container{
     display: block;
