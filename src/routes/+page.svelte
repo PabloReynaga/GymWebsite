@@ -103,12 +103,7 @@ setInterval(()=>{
     </div>
 
 </body>
-<footer>
-    <div class="footer">
-        © Cacho Fitness Coach. All the right reserved. 2023 
-    </div>
-    
-</footer>
+
 <style lang="scss">
 
 .footer{
