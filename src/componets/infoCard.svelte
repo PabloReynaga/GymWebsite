@@ -1,16 +1,28 @@
 <script>
 
-export let text;
-export let height;
-export let width;
-export let title;
-export let iconSorce;
-export let iconSize;
+export let text = undefined;
+export let height = undefined;
+export let width = undefined;
+export let title = undefined;
+export let iconSorce = undefined;
+export let iconSize = undefined;
+export let backgroundColor = undefined;
+export let borderRadius = undefined;
+export let opacity = undefined;
+export let border = undefined;
+export let background = undefined;
 
 
 
 </script>
-<div class="main-container" style="height: {height}; width: {width};">
+<div class="main-container" style="height: {height}; 
+    width: {width}; 
+    background-color : {backgroundColor}; 
+    border-radius: {borderRadius};
+    opacity: {opacity};
+    border: {border};
+    background: {background}"
+    >
     <div class="icon-container">
         <img alt="img" class="main-icon" style="width: {iconSize};" src={iconSorce}>
     </div>
@@ -24,17 +36,20 @@ export let iconSize;
 
 
 <style lang="scss">
-.main-container{
-    display: flexbox;
-    justify-content: center;
+    @import '../variables.scss';
     
+.main-container{
+
+   display: flexbox;
+   justify-content: center;
    text-align: center;
    padding: 25px;
    border: 3px solid $primary;
    border-radius: 5px;
-   margin: 25px;
-    
+   margin: 25px; 
 }
+
+
 .text{
     font-size: 15px;
     text-align: center;
@@ -58,6 +73,7 @@ export let iconSize;
     margin: 5px;
     
 }
+
 
 </style>
 
