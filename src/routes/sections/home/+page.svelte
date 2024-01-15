@@ -22,7 +22,7 @@ onMount(()=>{
         <p class="phase-title">Sé el primero en<span class="phase-title">cambiar la dirección de tu vida.</span></p>
         <div class="button-container " >
             <a href="https://wa.me/34695193268?text=Hola!%20Quiero%20empezar!">
-                <Button buttonValue="Comienza ahora!" img={Logo} ></Button>
+                <Button text="Comienza ahora!"></Button>
             </a>
     </div>
     </div> 

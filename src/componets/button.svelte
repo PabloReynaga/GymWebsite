@@ -1,26 +1,23 @@
 <script>
-export let buttonValue;
-export let img;
+export let text;
+export let width = undefined;
+export let height = undefined;
 
 
 </script>
 
-<main>
-    <button class="main-button">
-        <div class="button-container">
-            <p class="button-text">{buttonValue}</p>
-            <img class="iconWP" src={img} alt="img">
-        </div>
-    </button>
-</main>
+    <div class="main-button" style="height: {height}; width:{width}">
+        <button class="button-container" >
+            <p class="button-text">{text}</p>
+        </button>
+    </div>
 
 <style lang="scss">
+    @import '../variables.scss';
 .main-button {
-    display: block;
-    justify-content: center;
+    display: flex;
     font-size: 20px;
-    margin: auto;
-    margin-top: 25px;
+    margin-top: 10px;
     width: 250px;
     height: 50px;
     border: none;
@@ -30,57 +27,46 @@ export let img;
     cursor: pointer;
     position: relative;
     z-index: 0;
-}
-.main-button:before {
-    content: '';
-    background: linear-gradient(45deg, $primary,  $primary);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
+    margin: auto;
+    
+    
 }
 
 .main-button:active:after {
     background: transparent;
-    
+   background-color: $bg-dark;
+  
 }
-
-.main-button:hover:before {
-    opacity: 1;
-}
-
 .main-button:after {
     z-index: -1;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #111;
+    background: $primary;
     left: 0;
     top: 0;
+    border-radius: 100px;
    
 }
 .button-container{
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    transform: translateY(15%);
+    
+    
+    
+    
+    
 
 }
 .button-text{
-    margin-left: 25px;
+    
+    text-align: center;
 }
-.iconWP{
-    height: 30px;
-    float: right;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-}
+
 
 </style>

@@ -12,7 +12,7 @@
 
 <div class="main-container">
     <div class="title-container">
-        <p class="title">Beneficios exclusivos</p>
+        <p class="title">Beneficios <span style="color: #e21135;">exclusivos</span></p>
     </div>
     
     <div class="bonus-info-container">
@@ -47,6 +47,7 @@
             background= "linear-gradient(rgba(29, 29, 29, 0.5), rgba(0, 0, 0, .7) 50%)"
             border = "none"
             ></InfoCard>
+
        
     </div>
  
@@ -66,7 +67,7 @@
     font-size: 25px;
     text-align: center;
     text-transform: uppercase;
-    color: $primary;
+    
     margin-bottom: 10px;
 
 }

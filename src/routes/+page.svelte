@@ -1,8 +1,11 @@
 <script>
 import Home from './..//routes/sections/home/+page.svelte'    
-import Contact from '..//routes/sections/beneficios/+page.svelte'
-import About from '../routes/sections/queObtienes/+page.svelte'
-import Vlog from '../routes/sections/alimentacion/+page.svelte'
+import Beneficios from '..//routes/sections/beneficios/+page.svelte'
+import QueObtienes from '../routes/sections/queObtienes/+page.svelte'
+import Alimentacion from '../routes/sections/alimentacion/+page.svelte'
+import MiHistoria from '../routes/sections/miHistoria/+page.svelte/'
+import Oferta from '../routes/sections/oferta/+page.svelte/'
+import Preguntas from '../routes/sections/preguntas/+page.svelte/'
 import icon from '$lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
@@ -86,25 +89,34 @@ setInterval(()=>{
     </section>
 
     <section id="about">
-        <About/>
+        <QueObtienes/>
     </section>
     
     <section id="vlog">
-        <Vlog/>
+        <Alimentacion/>
     </section>
     
     <section id="contact" >
-        <Contact/>
+        <Beneficios/>
     </section>
 
-    <div class="focus-lost">
+    <section id="" >
+        <MiHistoria/>
+    </section>
 
+    <section id="" >
+        <Oferta/>
+    </section>
 
-    </div>
+    <section id="" >
+        <Preguntas/>
+    </section>
+
 
 </body>
 
 <style lang="scss">
+    @import '../variables.scss';
 
 .footer{
     font-size: 10px;
