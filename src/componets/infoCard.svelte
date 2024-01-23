@@ -65,7 +65,7 @@ export let background = undefined;
     display: flex;
     margin: auto;
     justify-content: center;
-    background-color: rgba($color: #ffc6c6, $alpha: .3);
+    background-color: rgba($color: #ffffff, $alpha: .3);
     width: 65px;
     border-radius: 100px;
 }
