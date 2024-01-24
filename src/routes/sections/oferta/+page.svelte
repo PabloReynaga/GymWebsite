@@ -11,7 +11,9 @@
         <div class="mejor-oferta-container"><p style="font-size: 18px;">Mejor oferta</p></div>
       <p class="subtitle">PLAN DE NUTRICIÓN Y ENTRENAMIENTO <span style="color:#e21135 ;">PERSONALIZADO</span></p> 
         <p class="price">260€<span style="font-size: 12px; margin-left: 10px;">trimestral</span></p>
-        <Button text={"Inicia ahora"} width={"200px"}></Button>
+        <a href="https://form.jotform.com/233088635542056?fbclid=PAAaZD2cZsj6dzCI2gFxnQ45LCCAib_7hnK09gcX9B-kiiMbw-vSZwvDULe-I_aem_AQlXzsK5UPsVKqhcKewRfm0PK6efw21o0F9lwDP9cfOhityNw7S3Q3oHFbxsH8MgeZ0">
+            <Button text={"Inicia ahora"} width={"200px"}></Button>
+        </a>
         <p style="font-size: 12px; margin-top: 5px">*Suscripción trimestral recurrente*</p>
     </div>
     <div class="info-container">

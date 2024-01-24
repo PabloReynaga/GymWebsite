@@ -6,6 +6,7 @@ import Alimentacion from '../routes/sections/alimentacion/+page.svelte'
 import MiHistoria from '../routes/sections/miHistoria/+page.svelte/'
 import Oferta from '../routes/sections/oferta/+page.svelte/'
 import Preguntas from '../routes/sections/preguntas/+page.svelte/'
+import Footer from '../routes/sections/footer/+page.svelte/'
 import icon from '$lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
@@ -51,8 +52,8 @@ setInterval(()=>{
             break;
     } 
 },10)
- 
-  </script>
+
+</script>
 
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} bind:innerWidth={windowsWidth}/>
 <header>
@@ -114,6 +115,9 @@ setInterval(()=>{
 
 
 </body>
+<footer>
+    <Footer/>
+</footer>
 
 <style lang="scss">
     @import '../variables.scss';

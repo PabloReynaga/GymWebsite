@@ -97,7 +97,7 @@ function changeIsMenuOpenValue(){
 			</nav>
 			<div class="footer-menu">
 				<div class="container-icons-instagram" bind:this={icon1} >
-					<a href="https://instagram.com/cacholofitness?igshid=MzRlODBiNWFlZA==">
+					<a href="https://www.instagram.com/angelclcoach/?utm_source=ig_web_button_share_sheet">
 							<img class="icon-instagram" alt="img" src={iconInstagram}>
 					</a>
 		

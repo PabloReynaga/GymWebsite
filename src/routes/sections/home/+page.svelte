@@ -21,7 +21,7 @@ onMount(()=>{
         <h1  class="title">Bienvenido al team <span class="red-text">Cacholo Fitness!</span></h1>
         <p class="phase-title">Sé el primero en<span class="phase-title">cambiar la dirección de tu vida.</span></p>
         <div class="button-container " >
-            <a href="https://wa.me/34695193268?text=Hola!%20Quiero%20empezar!">
+            <a href="https://form.jotform.com/233088635542056?fbclid=PAAaZD2cZsj6dzCI2gFxnQ45LCCAib_7hnK09gcX9B-kiiMbw-vSZwvDULe-I_aem_AQlXzsK5UPsVKqhcKewRfm0PK6efw21o0F9lwDP9cfOhityNw7S3Q3oHFbxsH8MgeZ0">
                 <Button text="Comienza ahora!"></Button>
             </a>
     </div>
