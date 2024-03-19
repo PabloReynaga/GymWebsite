@@ -10,6 +10,7 @@ html,body,h1{
   scroll-behavior: smooth;
   min-height: 100%;
   min-width: 100% ;
+ 
   
 }
 header{
@@ -57,3 +58,9 @@ section:nth-child(odd){
   background-color: $bg-dark ;
 }
 
+@media only screen and (min-width: 500px) {
+  html,body{
+    display: none;
+  }
+  
+}
