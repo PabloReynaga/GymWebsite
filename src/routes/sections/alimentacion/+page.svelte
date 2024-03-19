@@ -5,7 +5,7 @@
     import HomeIcon from '$lib/icon/home-icon.png' 
     
     </script>
-    <div class="img-mancuernas-container">
+    <div class="img-alimentacion-container">
         
         <div class="manuernas-img-content-container">
             
@@ -49,8 +49,8 @@
         margin-left: 70px;
         margin-right: 70px;
     }
-    .img-mancuernas-container{
-        position: relative;
+    .img-alimentacion-container{
+        position: block;
         width: 100%;
         height: 100%;
     }

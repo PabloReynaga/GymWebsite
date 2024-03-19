@@ -149,7 +149,7 @@ nav a{
 
 }
 .focus-lost{
-    background-color: red;
+    
     height: 30%;
     width: 100%;
     position: fixed;

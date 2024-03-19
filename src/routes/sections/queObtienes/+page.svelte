@@ -9,7 +9,7 @@ import HomeIcon from '$lib/icon/home-icon.png'
     
     <div class="manuernas-img-content-container">
         
-        <p class="title-img-container">Qué optienes?</p>
+        <p class="title-img-container">Qué obtienes?</p>
         <p class="subtitle-img-container">Planes de entrenamiento personalizados</p>
         <p class="texto-img-container">¡Por fin un programa de entrenamiento diseñado para ti! ¡Todos los ejercicios serán demostrados en video por mí para que puedas realizarlos correctamente! Se sentirá como si estuviéramos trabajando en persona.</p>
         <div class="info-cards">
@@ -52,7 +52,7 @@ p{
     margin-right: 70px;
 }
 .img-mancuernas-container{
-    position: relative;
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -86,7 +86,8 @@ p{
     background-position: center;
     background-repeat: none;
     background-size:cover;
-    backdrop-filter: blur(5px)
+    backdrop-filter: blur(5px);
+    
  
     
     

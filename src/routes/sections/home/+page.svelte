@@ -26,9 +26,6 @@ onMount(()=>{
             </a>
     </div>
     </div> 
-   
-   
-  
 </div>
 <style lang="scss">
     @import '../../../variables.scss';
@@ -39,15 +36,22 @@ onMount(()=>{
     font-family: 'Montserrat', sans-serif;
     
 }
+.main-container{
+    position: relative;
+    min-height: 650px;
+    min-width: 100%;
+    background-image: url('../../../lib/img/main-photo.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+}
 .title{
-    position:relative;
+   display: block;
     color: $secondary;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    
-
 }
 .red-text{
     font-size: 30px;
@@ -73,16 +77,13 @@ onMount(()=>{
 
 @media only screen and (width < 600px){
     .title-container{
-    display: block;
+    position: absolute;
     margin: auto;
-    width: 100%;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    min-width: 4rem;
+    bottom: 0;
+    margin-bottom: 4rem;
     padding-left:15px ;
     padding-right: 15px;
-    background-color: $bg-dark-gray;
-    
+    background-color: transparent;
 }
 }
 </style>
