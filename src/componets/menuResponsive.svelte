@@ -180,7 +180,7 @@ function changeIsMenuOpenValue(){
 .icon{
 	transform: scale(.3);
 	margin: auto;
-	 margin-top: -15px;
+	
 	
 }
 .button{

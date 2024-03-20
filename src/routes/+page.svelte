@@ -10,6 +10,16 @@ import Footer from '../routes/sections/footer/+page.svelte/'
 import icon from '$lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
+import gsap from 'gsap'
+  import { onMount } from 'svelte';
+
+let animationIcon;
+let animationResponsiveMenuButton;
+
+onMount(()=>{
+    
+   
+})
     
 let y;
 $:windowsWidth=0;
@@ -58,7 +68,8 @@ setInterval(()=>{
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} bind:innerWidth={windowsWidth}/>
 <header>
     <a href="#home">
-        <img class="icon" alt="img" src={icon}/> 
+        <img class="icon" alt="img" src={icon}
+        bind:this={animationIcon}/> 
     </a>
 
     {#if windowsWidth>650}
@@ -72,7 +83,7 @@ setInterval(()=>{
 
 
     {#if windowsWidth<650}
-    <div class="responsive-menu">
+    <div class="responsive-menu" bind:this={animationResponsiveMenuButton}>
         <MenuResponsive>
             
         </MenuResponsive>
@@ -134,11 +145,32 @@ setInterval(()=>{
     color: $primary;
 }
 .icon{
-    height: 35px;
-    transform: scale(2);
+    height: 80px;
     object-fit: cover;
-    margin-left: 10px;
-    margin-top: 10px;
+    animation-name: animationIcon;
+    animation-duration: .5s;
+}
+.responsive-menu{
+    animation-name: animationMenuButton;
+    animation-duration: .5s;
+}
+@keyframes animationMenuButton {
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes animationIcon {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
 }
 
 

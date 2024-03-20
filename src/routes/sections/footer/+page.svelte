@@ -29,7 +29,7 @@ import IconYoutube from './../../../lib/icon/youtube-black.png'
 <style lang="scss">
     @import './../../../variables.scss';
     .main{
-        height: 70vh;
+        height: 50vh;
         display: block;
         justify-content: center;
         color: $bg-bright;

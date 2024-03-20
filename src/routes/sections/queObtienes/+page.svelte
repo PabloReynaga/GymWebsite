@@ -3,6 +3,46 @@
 import InfoCard from '../../../componets/infoCard.svelte';
 import Phones from '$lib/img/phones-pictures.png'
 import HomeIcon from '$lib/icon/home-icon.png' 
+import gsap from 'gsap';
+import { onMount } from 'svelte';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
+
+let card1 = null;
+let card2 = null;
+let card3 = null;
+gsap.registerPlugin(ScrollTrigger)
+onMount(()=>{
+    gsap.from(card1,{ 
+        scrollTrigger:{
+            trigger:card1,
+            toggleActions: "restart none none none",
+            
+        },
+        x:200,
+        duration: .5,
+        
+    }),
+    gsap.from(card2,{ 
+        scrollTrigger:{
+            trigger:card2,
+            toggleActions: "restart none none none",
+            
+        },
+        x:-200,
+        duration: .5,
+        
+    }),
+    gsap.from(card3,{ 
+        scrollTrigger:{
+            trigger:card3,
+            toggleActions: "restart none none none",
+            
+        },
+        x:200,
+        duration: .5,
+        
+    })
+})
 
 </script>
 <div class="img-mancuernas-container">
@@ -13,24 +53,30 @@ import HomeIcon from '$lib/icon/home-icon.png'
         <p class="subtitle-img-container">Planes de entrenamiento personalizados</p>
         <p class="texto-img-container">¡Por fin un programa de entrenamiento diseñado para ti! ¡Todos los ejercicios serán demostrados en video por mí para que puedas realizarlos correctamente! Se sentirá como si estuviéramos trabajando en persona.</p>
         <div class="info-cards">
+            <div bind:this={card1}>
             <InfoCard 
             title="✓ Entrenamiento en casa y gimnasio" 
             text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
             iconSorce={HomeIcon}
             iconSize = 40px
             ></InfoCard>
+            </div>
+            <div bind:this={card2}>
             <InfoCard 
             title="✓ Entrenamiento en casa y gimnasio" 
             text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
             iconSorce={HomeIcon}
             iconSize = 40px
             ></InfoCard>
+            </div>
+            <div bind:this={card3}>
             <InfoCard 
             title="✓ Entrenamiento en casa y gimnasio" 
             text="¡Entrena donde más te convenga! ¡Gimnasio o desde la comodidad de tu casa!"
             iconSorce={HomeIcon}
             iconSize = 40px
             ></InfoCard>
+            </div>
             <img alt="img" class="img" src={Phones}>
         </div> 
     </div>
