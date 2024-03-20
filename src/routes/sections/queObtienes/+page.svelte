@@ -5,7 +5,7 @@ import Phones from '$lib/img/phones-pictures.png'
 import HomeIcon from '$lib/icon/home-icon.png' 
 import gsap from 'gsap';
 import { onMount } from 'svelte';
-import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
 
 let card1 = null;
 let card2 = null;
