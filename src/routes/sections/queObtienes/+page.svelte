@@ -5,43 +5,43 @@ import Phones from '$lib/img/phones-pictures.png'
 import HomeIcon from '$lib/icon/home-icon.png' 
 import gsap from 'gsap';
 import { onMount } from 'svelte';
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 let card1 = null;
 let card2 = null;
 let card3 = null;
 gsap.registerPlugin(ScrollTrigger)
 onMount(()=>{
-    gsap.from(card1,{ 
-        scrollTrigger:{
-            trigger:card1,
-            toggleActions: "restart none none none",
+    // gsap.from(card1,{ 
+    //     scrollTrigger:{
+    //         trigger:card1,
+    //         toggleActions: "restart none none none",
             
-        },
-        x:200,
-        duration: .5,
+    //     },
+    //     x:200,
+    //     duration: .5,
         
-    }),
-    gsap.from(card2,{ 
-        scrollTrigger:{
-            trigger:card2,
-            toggleActions: "restart none none none",
+    // }),
+    // gsap.from(card2,{ 
+    //     scrollTrigger:{
+    //         trigger:card2,
+    //         toggleActions: "restart none none none",
             
-        },
-        x:-200,
-        duration: .5,
+    //     },
+    //     x:-200,
+    //     duration: .5,
         
-    }),
-    gsap.from(card3,{ 
-        scrollTrigger:{
-            trigger:card3,
-            toggleActions: "restart none none none",
+    // }),
+    // gsap.from(card3,{ 
+    //     scrollTrigger:{
+    //         trigger:card3,
+    //         toggleActions: "restart none none none",
             
-        },
-        x:200,
-        duration: .5,
+    //     },
+    //     x:200,
+    //     duration: .5,
         
-    })
+    // })
 })
 
 </script>

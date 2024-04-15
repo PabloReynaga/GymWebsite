@@ -81,7 +81,7 @@
         padding-bottom: 5%;
         width: 100%;
         min-height: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .9) 100%), url("../../../lib/img/fit-food.png") ;
+
         background-position: center;
         background-repeat: none;
         background-size:cover;
