@@ -1,7 +1,6 @@
 <script>
     import { onMount } from 'svelte';
     import Button from './../../../componets/button.svelte'
-    import Logo from './../../../lib/icon/main-icon.png'
     import { gsap } from 'gsap'
     
 

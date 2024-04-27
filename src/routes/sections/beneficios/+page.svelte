@@ -1,7 +1,6 @@
 <script>
     
     import InfoCard from '../../../componets/infoCard.svelte';
-    import Phones from '$lib/img/phones-pictures.png'
     import HomeIcon from '$lib/icon/home-icon.png' 
    
 

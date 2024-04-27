@@ -1,5 +1,5 @@
 <script>
-import Logo from '$lib/icon/main-icon.png'
+import Logo from './../../../lib/icon/main-icon.png'
 import IconInstgram from './../../../lib/icon/instagram-black.png'
 import IconYoutube from './../../../lib/icon/youtube-black.png'
 

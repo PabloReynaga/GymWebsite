@@ -1,5 +1,5 @@
 <script>
-import Home from './..//routes/sections/home/+page.svelte'    
+import Home from './../routes/sections/home/+page.svelte'    
 import Beneficios from '..//routes/sections/beneficios/+page.svelte'
 import QueObtienes from '../routes/sections/queObtienes/+page.svelte'
 import Alimentacion from '../routes/sections/alimentacion/+page.svelte'
@@ -7,7 +7,7 @@ import MiHistoria from '../routes/sections/miHistoria/+page.svelte/'
 import Oferta from '../routes/sections/oferta/+page.svelte/'
 import Preguntas from '../routes/sections/preguntas/+page.svelte/'
 import Footer from '../routes/sections/footer/+page.svelte/'
-import icon from '$lib/icon/main-icon.png'
+import icon from './../lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
 import gsap from 'gsap'
