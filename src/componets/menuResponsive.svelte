@@ -1,5 +1,5 @@
 <script>
-import icon from './../lib/icon/main-icon.png'
+import icon from '$lib/icon/main-icon.png'
 import iconInstagram from '$lib/icon/instagram-black.png'
 import iconMail from '$lib/icon/mail-black.png'
 import gsap from 'gsap';

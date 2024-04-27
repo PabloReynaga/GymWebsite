@@ -3,14 +3,12 @@
 import InfoCard from '../../../componets/infoCard.svelte';
 import Phones from '$lib/img/phones-pictures.png'
 import HomeIcon from '$lib/icon/home-icon.png' 
-import gsap from 'gsap';
 import { onMount } from 'svelte';
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 let card1 = null;
 let card2 = null;
 let card3 = null;
-gsap.registerPlugin(ScrollTrigger)
+// gsap.registerPlugin(ScrollTrigger)
 onMount(()=>{
     // gsap.from(card1,{ 
     //     scrollTrigger:{

@@ -7,7 +7,7 @@ import MiHistoria from '../routes/sections/miHistoria/+page.svelte/'
 import Oferta from '../routes/sections/oferta/+page.svelte/'
 import Preguntas from '../routes/sections/preguntas/+page.svelte/'
 import Footer from '../routes/sections/footer/+page.svelte/'
-import icon from './../lib/icon/main-icon.png'
+import icon from '$lib/icon/main-icon.png'
 import MenuResponsive from '../componets/menuResponsive.svelte';
 import './../index.css'
 import gsap from 'gsap'
@@ -67,10 +67,10 @@ setInterval(()=>{
 
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} bind:innerWidth={windowsWidth}/>
 <header>
-    <!-- <a href="#home">
+    <a href="#home">
         <img class="icon" alt="img" src={icon}
         bind:this={animationIcon}/> 
-    </a> -->
+    </a>
 
     {#if windowsWidth>650}
     <nav>
