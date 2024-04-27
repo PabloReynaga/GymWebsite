@@ -6,9 +6,9 @@ import IconYoutube from './../../../lib/icon/youtube-black.png'
 </script>
 
 <div class="main">
-    <div class="icon-container">
+    <!-- <div class="icon-container">
         <img alt="img" src={Logo} class="icon">
-    </div>
+    </div> -->
     <div class="text-container">
         <p>© Copyright 2024. Cacholofitness. Todos los derechos reservados. Developed by Foreach.</p>
     </div>

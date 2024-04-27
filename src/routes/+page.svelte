@@ -67,10 +67,10 @@ setInterval(()=>{
 
 <svelte:window bind:scrollY={y} bind:innerHeight={innerHeight} bind:innerWidth={windowsWidth}/>
 <header>
-    <a href="#home">
+    <!-- <a href="#home">
         <img class="icon" alt="img" src={icon}
         bind:this={animationIcon}/> 
-    </a>
+    </a> -->
 
     {#if windowsWidth>650}
     <nav>
